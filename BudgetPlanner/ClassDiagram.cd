@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BudgetPlanner.Controller.AccessoriesController">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAMBGAAIAAACAAQAgAAkACAACEABAoAAgAAgA=</HashCode>
+      <FileName>Controller\AccessoriesController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="BudgetController" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BudgetPlanner.Controller.AmountController">
+    <Position X="10.25" Y="5.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACABQAAAAAAIAEEIAAAAgAAAgAAAAAQAAAAAgkAAA=</HashCode>
+      <FileName>Controller\AmountController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="BudgetController" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BudgetPlanner.Controller.BillsController">
+    <Position X="10" Y="9" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAABAAEQAABAAACAEAACECAAIAgAACEAIBoIBgAABA=</HashCode>
+      <FileName>Controller\BillsController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="BudgetController" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BudgetPlanner.Controller.BudgetController">
+    <Position X="10.75" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>IAZAQIAEAAAABEIAACkAAAiIYAAAABAACAFgAAACAIE=</HashCode>
+      <FileName>Controller\BudgetController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Amount" />
+      <Property Name="Bill" />
+      <Property Name="UserAccount" />
+      <Property Name="Accessory" />
+      <Property Name="AmountSpent" />
+      <Property Name="PersonalBudget" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BudgetPlanner.Controller.FoodController">
+    <Position X="15.25" Y="6.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ACAAAgAAAAAABACIAAAAAIIIQARQABAQAAAAAAIAAIA=</HashCode>
+      <FileName>Controller\FoodController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AmountSpent" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BudgetPlanner.Controller.GroceryController">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>IEMQgiEIAQBAhAAASEAEgUAApAAAARAAoAAAAAkAQIA=</HashCode>
+      <FileName>Controller\GroceryController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="BudgetController" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BudgetPlanner.Controller.Month">
+    <Position X="1" Y="10" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ABAAIAAAAAAAAAAAAAAAAAQAAAACAAAAAAAgAAgAAAA=</HashCode>
+      <FileName>Controller\Month.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="BillsController" />
+      <Property Name="BudgetController" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BudgetPlanner.Controller.PersonalBudget">
+    <Position X="1" Y="5.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AABAAAAAIAAAAAAABAAIAAiBAAgCASAFAIAAICAAABA=</HashCode>
+      <FileName>Controller\PersonalBudget.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Amount" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BudgetPlanner.Model.Accessory" BaseTypeListCollapsed="true">
+    <Position X="8" Y="5.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Events" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAggIABEAQAIICAQDFAAAQhiGACggBFEAogABAASEA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BudgetPlanner.Model.Amount" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Events" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAgAAABAAggAICAUCEAAAgpiCgAABAAAAAAAAQAQAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BudgetPlanner.Model.AmountSpent" BaseTypeListCollapsed="true">
+    <Position X="14.75" Y="0.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Events" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAEmCCABAAgAAAAQQAMAAAgNiCgAARAAAAAAQAQBBAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BudgetPlanner.Model.Bill" BaseTypeListCollapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AABiIQABQACQgAQQUAFIBAABiOAjIgBBEAhgIBBAAQA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BudgetPlanner.Model.UserAccount" BaseTypeListCollapsed="true">
+    <Position X="5.5" Y="0.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAiMggBQAAQhEGAQEMEYASViCAAZgBDGRBQAAAEEYA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BudgiDesk.BLL.Earning">
+    <Position X="17.25" Y="4.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAQQAAAAIQAABEAAAACABAAAAAAAAAABIAAAAAAAEAA=</HashCode>
+      <FileName>Controller\Earning.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AmountSpent" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BudgiDesk.BLL.Expense">
+    <Position X="17" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAQAABAAAAAIAAAAQAAAACAABAAgMAAAAEAI=</HashCode>
+      <FileName>Controller\Expense.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AmountSpent" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BudgetPlanner.Model.PersonalBudget" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="5.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAgCQABAA6AZAAQVAEAAAgJiCgAATANBoAoKyRAiAQ=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

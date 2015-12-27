@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.5, 13.5" name="BudgetPlannerDB">
+  <DataContextMoniker Name="/BudgetPlannerDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="053c0c13-c420-4c02-96cb-51219e255897" absoluteBounds="9.25, 9.625, 2, 1.9178898111979166">
+      <DataClassMoniker Name="/BudgetPlannerDBDataContext/Accessory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5fe35e8c-28b5-4e0a-b242-6d083d12adb5" absoluteBounds="9.265, 10.085, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="09cb9e65-16a5-45dd-a266-2afb405f78bc" absoluteBounds="2.375, 4.75, 2, 1.2605004882812496">
+      <DataClassMoniker Name="/BudgetPlannerDBDataContext/Amount" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2bf2b67d-8338-4640-81d8-58d0f043604e" absoluteBounds="2.3900000000000006, 5.21, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="502e7997-a98c-4027-bfd4-31e6a8d48994" absoluteBounds="5.25, 3.375, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/BudgetPlannerDBDataContext/AmountSpent" />
+      <nestedChildShapes>
+        <elementListCompartment Id="50da7b9f-6225-4aa2-9a1b-4c42db37641c" absoluteBounds="5.2650000000000006, 3.835, 1.9700000000000002, 0.86484781901041663" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4b5feb03-f744-420f-bdd1-e7ee42a4f310" absoluteBounds="6, 11.375, 2, 1.9178898111979166">
+      <DataClassMoniker Name="/BudgetPlannerDBDataContext/Bill" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3e8af6b4-9352-4811-bc3d-33856630a24c" absoluteBounds="6.0150000000000006, 11.835, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4044a587-9a2a-4926-82d5-6bf9bf5918ef" absoluteBounds="6, 8.625, 2, 1.7535424804687505">
+      <DataClassMoniker Name="/BudgetPlannerDBDataContext/Budget" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6c2d67f8-4484-40cf-a85e-ab9f97e7db84" absoluteBounds="6.0150000000000006, 9.085, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="080c8dff-3223-4045-8e36-6164d4fa106e" absoluteBounds="9.25, 7.5, 2, 1.5891951497395827">
+      <DataClassMoniker Name="/BudgetPlannerDBDataContext/Food" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c56505c7-c6fb-480e-b916-520df70c70cd" absoluteBounds="9.265, 7.9600000000000009, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="78cf1b9f-b5db-4128-a704-3b7f4eb6745c" absoluteBounds="2.625, 8.125, 2, 2.9039737955729166">
+      <DataClassMoniker Name="/BudgetPlannerDBDataContext/Grocery" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3bbecd56-21f3-4310-8011-8d8c501da226" absoluteBounds="2.6400000000000006, 8.585, 1.9700000000000002, 2.3439737955729165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="35b0d286-5995-4b28-852f-37bdcdc2e158" absoluteBounds="9.125, 3, 2, 2.2465844726562496">
+      <DataClassMoniker Name="/BudgetPlannerDBDataContext/PersonalBudget" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a30fbddc-8112-43b3-ab69-225cacfd449c" absoluteBounds="9.14, 3.4600000000000009, 1.9700000000000002, 1.68658447265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f23f1871-8424-41c5-8b40-9ab5f4aabe35" absoluteBounds="6.125, 5.75, 2, 1.9178898111979166">
+      <DataClassMoniker Name="/BudgetPlannerDBDataContext/UserAccount" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b45f23dc-594e-49a8-831a-781408c7e3f7" absoluteBounds="6.1400000000000006, 6.21, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.25 : 10.1065991210938); (8 : 10.1065991210938)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BudgetPlannerDBDataContext/Accessory/Accessory_Budget" />
+      <nodes>
+        <classShapeMoniker Id="053c0c13-c420-4c02-96cb-51219e255897" />
+        <classShapeMoniker Id="4044a587-9a2a-4926-82d5-6bf9bf5918ef" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7 : 11.375); (7 : 10.5881982421875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BudgetPlannerDBDataContext/Bill/Bill_Budget" />
+      <nodes>
+        <classShapeMoniker Id="4b5feb03-f744-420f-bdd1-e7ee42a4f310" />
+        <classShapeMoniker Id="4044a587-9a2a-4926-82d5-6bf9bf5918ef" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.25 : 8.94794840494792); (8 : 8.94794840494792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BudgetPlannerDBDataContext/Food/Food_Budget" />
+      <nodes>
+        <classShapeMoniker Id="080c8dff-3223-4045-8e36-6164d4fa106e" />
+        <classShapeMoniker Id="4044a587-9a2a-4926-82d5-6bf9bf5918ef" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.625 : 9.60659912109375); (6 : 9.60659912109375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BudgetPlannerDBDataContext/Grocery/Grocery_Budget" />
+      <nodes>
+        <classShapeMoniker Id="78cf1b9f-b5db-4128-a704-3b7f4eb6745c" />
+        <classShapeMoniker Id="4044a587-9a2a-4926-82d5-6bf9bf5918ef" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.125 : 6.83919564973958); (3.375 : 6.83919564973958); (3.375 : 6.01050048828125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BudgetPlannerDBDataContext/UserAccount/UserAccount_Amount" />
+      <nodes>
+        <classShapeMoniker Id="f23f1871-8424-41c5-8b40-9ab5f4aabe35" />
+        <classShapeMoniker Id="09cb9e65-16a5-45dd-a266-2afb405f78bc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.6875 : 5.75); (6.6875 : 4.79984781901042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BudgetPlannerDBDataContext/UserAccount/UserAccount_AmountSpent" />
+      <nodes>
+        <classShapeMoniker Id="f23f1871-8424-41c5-8b40-9ab5f4aabe35" />
+        <classShapeMoniker Id="502e7997-a98c-4027-bfd4-31e6a8d48994" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.0625 : 7.66788981119792); (7.0625 : 8.625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BudgetPlannerDBDataContext/UserAccount/UserAccount_Budget" />
+      <nodes>
+        <classShapeMoniker Id="f23f1871-8424-41c5-8b40-9ab5f4aabe35" />
+        <classShapeMoniker Id="4044a587-9a2a-4926-82d5-6bf9bf5918ef" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.125 : 6.59375); (9.15625 : 6.59375); (9.15625 : 5.24658447265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BudgetPlannerDBDataContext/UserAccount/UserAccount_PersonalBudget" />
+      <nodes>
+        <classShapeMoniker Id="f23f1871-8424-41c5-8b40-9ab5f4aabe35" />
+        <classShapeMoniker Id="35b0d286-5995-4b28-852f-37bdcdc2e158" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BudgetPlanner.Controller.AccessoriesController" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAMBGAAIAAACAAQAgAAkACAACEABAoAAAAAgA=</HashCode>
+      <FileName>Controller\AccessoriesController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.Controller.AmountController" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACABQAAAAAAIAEEIAAAAgAAAgAAAAAQAAAAAAkAAA=</HashCode>
+      <FileName>Controller\AmountController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.Controller.BillsController" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAEQAABAAACAEAACECAAIAgAACEAIBoIBAAABA=</HashCode>
+      <FileName>Controller\BillsController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.Controller.BudgetController" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAZAQAAEAAAAAEIAACkAAAgAYAAAABAACAFgAAACAIE=</HashCode>
+      <FileName>Controller\BudgetController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.Controller.Constants" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJAAkAAAAAAAAABAAAABAAAAAAAQAAAAAAAAIAgACIQ=</HashCode>
+      <FileName>Controller\Constants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.Controller.FoodController" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAgAAAAAAAACIAAAAAIIIQARQABAQAAAAAAIAAIA=</HashCode>
+      <FileName>Controller\FoodController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.Controller.GroceryController" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IEMQgiEIAQBAhAAASEAEgUAApAAAARAAoAAAAAEAQIA=</HashCode>
+      <FileName>Controller\GroceryController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.Controller.Messager" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgwAgAAAAAAAAAAEAAAAAAEAABACAAMACAAAAA=</HashCode>
+      <FileName>Controller\Messager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.Controller.Month" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAIAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Controller\Month.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.Controller.PersonalBudget" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAIAAAAAAABAAIAAgBAAgCASAFAIAAICAAABA=</HashCode>
+      <FileName>Controller\PersonalBudget.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.Controller.UserAccountController" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBMAAAAAAAgCCAAEAAQARAAAAAAAgCAQIAAREEEAE=</HashCode>
+      <FileName>Controller\UserAccountController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.Form1" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAQQSAAAAAAAACAQAACgMA5EAAAAHAvAAAAAAA=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.Program" Collapsed="true">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.Model.AccessoriesModel" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABCAAAAAAAAAQAgAAgACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\AccessoriesModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.Model.AmountModel" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACABQAAAAAAAAEAIAAAAAAAAgAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Model\AmountModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.Model.BillsModel" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAACECAAAAAAAAEAIAAAAAAAAA=</HashCode>
+      <FileName>Model\BillsModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.Model.BudgetModel" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAJAQAAAAAAAAEIAIAgAAAgBIAAAABgAAEBAAAACAAE=</HashCode>
+      <FileName>Model\BudgetModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.Model.BudgetPlannerDBDataContext" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAIAEAABAAAiBAAAAIoABMoICCKAIAAgEQhQAkkAwAg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.Model.Accessory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAggIABEAQAIICAQDFAAAQhiGACggBFEAogABAASEA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BudgetPlanner.Model.Amount" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAABAAggAICAUCEAAAgpiCgAABAAAAAAAAQAQAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BudgetPlanner.Model.AmountSpent" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEmCCABAAgAAAAQQAMAAAgNiCgAARAAAAAAQAQBBAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BudgetPlanner.Model.Bill" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABiIQABQACQgAQQUAFIBAABiOAjIgBBEAhgIBBAAQA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BudgetPlanner.Model.Budget" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AkAyAJQBAAgAAACgQCFAAAiJ2GgAAJABACtAAgQCQII=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BudgetPlanner.Model.Food" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQwEgIBAAAAACAAQAEAAAAB3CAaAgBBEAABAAJSAIg=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BudgetPlanner.Model.Grocery" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgFkACUJAAIBgIUNRAFUwYABr2oUk5BBsAIAAAAAbIA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BudgetPlanner.Model.UserAccount" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAiMggBQAAQhEGAQEMEYASViCAAZgBDGRBQAAAEEYA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BudgetPlanner.Model.DatabaseFunctions" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAABAAAAFAAAAAAQAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Model\DatabaseFunctions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.Model.FoodModel" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAACAAAAAAIAIAARAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\FoodModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.Model.GroceryModel" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAgAAAAAAAAAAACEAAAEAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\GroceryModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.Model.UserAccountModel" Collapsed="true">
+    <Position X="2.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAQABAAAAAAAAAAAAAAREAEAE=</HashCode>
+      <FileName>Model\UserAccountModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.Properties.Resources" Collapsed="true">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KAoJgEBhFGQBYCAEiABBEhg8U8dDAIAICsABQEQJEYA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.Properties.Settings" Collapsed="true">
+    <Position X="9.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAEAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.View.frmAbout" Collapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAACAAABAAAACAAAACAAAABAAAAAAAAQAAAAA=</HashCode>
+      <FileName>View\frmAbout.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.View.frmAddAmount" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQACAAEABCAAABAUAYCEAiACQAAAAAABiAJGBQAAQAA=</HashCode>
+      <FileName>View\frmAddAmount.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.View.frmAddHomeBudget" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QMJQAgzIEDCcAJ2D2BrmMUEiCETspCMVzmiEBUoiwCA=</HashCode>
+      <FileName>View\frmAddHomeBudget.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.View.frmAddPersonalBudget" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AMACgIAAACACABsAQAiEAEACQECARBAACAKEDQIgSAA=</HashCode>
+      <FileName>View\frmAddPersonalBudget.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.View.frmCalculator" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>TABAACCCyjwACARwVASAAIAKIAQChSAEAgBCBQgQAII=</HashCode>
+      <FileName>View\frmCalculator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.View.frmCreateUser" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQqCkIKQFyEASAIAAASBB5AiYAERYBICR4hBAUIOBwQ=</HashCode>
+      <FileName>View\frmCreateUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.View.frmExportData" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BQgIAIAAACgACBUACAiAAECDIAAABAgAAAINAAAABAA=</HashCode>
+      <FileName>View\frmExportData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.View.frmForgotUserDetail" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEgAgQCQAGAAAAKAgSCAAAAiBAAABBACByAAAUIAAAA=</HashCode>
+      <FileName>View\frmForgotUserDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.View.frmLogin" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAgJAQASAAAAEAAACAUEACoAAABgAABkEBAAAAASg=</HashCode>
+      <FileName>View\frmLogin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.View.frmMain" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hYnDBIAAQCEFMJLAAACCAQgjIMwIBAAIDkKkJSAAIEI=</HashCode>
+      <FileName>View\frmMain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetPlanner.View.frmViewDetails" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BQoAABgYASAgBVgAAACAARgDICQABBAgAAAAEUIACAM=</HashCode>
+      <FileName>View\frmViewDetails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="BudgetPlanner.Controller.FormFadeAction" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Controller\Utilities.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

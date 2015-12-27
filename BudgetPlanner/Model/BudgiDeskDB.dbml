@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BudgetPlannerDB" Class="BudgetPlannerDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(local)\sqlexpress;Initial Catalog=BudgetPlannerDB;Integrated Security=True" SettingsObjectName="BudgetPlanner.Properties.Settings" SettingsPropertyName="BudgetPlannerDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Accessory" Member="Accessories">
+    <Type Name="Accessory">
+      <Column Name="AccessoriesID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Jewellary" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Perfumes" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="InteriorDecor" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Cosmetics" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Clothes" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Shoes" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Accessory_Budget" Member="Budgets" ThisKey="AccessoriesID" OtherKey="AccessoriesID" Type="Budget" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Amount" Member="Amounts">
+    <Type Name="Amount">
+      <Column Name="UserID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PersonalAmount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HomeAmount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="UserAccount_Amount" Member="UserAccount" ThisKey="UserID" OtherKey="ID" Type="UserAccount" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AmountSpent" Member="AmountSpents">
+    <Type Name="AmountSpent">
+      <Column Name="UserID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SpentHomeAmount" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DateOfSpentAmount" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SpentPersonalAmount" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="UserAccount_AmountSpent" Member="UserAccount" ThisKey="UserID" OtherKey="ID" Type="UserAccount" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Bill" Member="Bills">
+    <Type Name="Bill">
+      <Column Name="BillsID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Electricity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Gas" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Phone" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Water" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Medical" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Education" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Bill_Budget" Member="Budgets" ThisKey="BillsID" OtherKey="BillsID" Type="Budget" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Budget" Member="Budgets">
+    <Type Name="Budget">
+      <Column Name="UserID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BillsID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FoodID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GroceryID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AccessoriesID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DateOfBudget" Type="System.DateTime" DbType="DateTime NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Accessory_Budget" Member="Accessory" ThisKey="AccessoriesID" OtherKey="AccessoriesID" Type="Accessory" IsForeignKey="true" />
+      <Association Name="Bill_Budget" Member="Bill" ThisKey="BillsID" OtherKey="BillsID" Type="Bill" IsForeignKey="true" />
+      <Association Name="Food_Budget" Member="Food" ThisKey="FoodID" OtherKey="FoodID" Type="Food" IsForeignKey="true" />
+      <Association Name="Grocery_Budget" Member="Grocery" ThisKey="GroceryID" OtherKey="GroceryID" Type="Grocery" IsForeignKey="true" />
+      <Association Name="UserAccount_Budget" Member="UserAccount" ThisKey="UserID" OtherKey="ID" Type="UserAccount" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Food" Member="Foods">
+    <Type Name="Food">
+      <Column Name="FoodID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Vegetables" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Fruits" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Meat" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Milk" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Food_Budget" Member="Budgets" ThisKey="FoodID" OtherKey="FoodID" Type="Budget" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Grocery" Member="Groceries">
+    <Type Name="Grocery">
+      <Column Name="GroceryID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Cereals" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Soap" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Shampoo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Lotion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Oil" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Deoderants" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Surf" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ToothPaste" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CleaningLiquids" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Tea" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EnergyDrinks" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Spices" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Grocery_Budget" Member="Budgets" ThisKey="GroceryID" OtherKey="GroceryID" Type="Budget" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PersonalBudget" Member="PersonalBudgets">
+    <Type Name="PersonalBudget">
+      <Column Name="UserID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BusFair" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="WithFriends" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OnMySelf" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Gifts" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Extra" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Clothes" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Phone" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="UserAccount_PersonalBudget" Member="UserAccount" ThisKey="UserID" OtherKey="ID" Type="UserAccount" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserAccount" Member="UserAccounts">
+    <Type Name="UserAccount">
+      <Column Name="ID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Age" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Gender" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="UserName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="UserAccount_Amount" Member="Amount" ThisKey="ID" OtherKey="UserID" Type="Amount" Cardinality="One" />
+      <Association Name="UserAccount_AmountSpent" Member="AmountSpent" ThisKey="ID" OtherKey="UserID" Type="AmountSpent" Cardinality="One" />
+      <Association Name="UserAccount_Budget" Member="Budgets" ThisKey="ID" OtherKey="UserID" Type="Budget" />
+      <Association Name="UserAccount_PersonalBudget" Member="PersonalBudgets" ThisKey="ID" OtherKey="UserID" Type="PersonalBudget" />
+    </Type>
+  </Table>
+</Database>
