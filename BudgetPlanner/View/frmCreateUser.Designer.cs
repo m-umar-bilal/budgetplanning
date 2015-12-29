@@ -164,6 +164,7 @@
             this.txtAutoID.Name = "txtAutoID";
             this.txtAutoID.Size = new System.Drawing.Size(111, 23);
             this.txtAutoID.TabIndex = 51;
+            this.txtAutoID.Visible = false;
             // 
             // lblAutoID
             // 
@@ -176,6 +177,7 @@
             this.lblAutoID.Size = new System.Drawing.Size(48, 15);
             this.lblAutoID.TabIndex = 50;
             this.lblAutoID.Text = "&Auto ID";
+            this.lblAutoID.Visible = false;
             // 
             // rdbFemale
             // 

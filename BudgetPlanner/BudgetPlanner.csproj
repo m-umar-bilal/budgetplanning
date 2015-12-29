@@ -59,8 +59,17 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WhatsAppApi, Version=1.0.2.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Whatsapp.NET.1.2.2\lib\WhatsAppApi.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BudgiDeskDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BudgiDeskDBDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Controller\AccessoriesController.cs" />
     <Compile Include="Controller\BillsController.cs" />
     <Compile Include="Controller\BudgetController.cs" />
@@ -112,6 +121,18 @@
     <Compile Include="View\frmAddAmount.Designer.cs">
       <DependentUpon>frmAddAmount.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\frmAddEarnings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmAddEarnings.Designer.cs">
+      <DependentUpon>frmAddEarnings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmAddExpenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmAddExpenses.Designer.cs">
+      <DependentUpon>frmAddExpenses.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\frmAddHomeBudget.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +150,12 @@
     </Compile>
     <Compile Include="View\frmCalculator.Designer.cs">
       <DependentUpon>frmCalculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmCategory.Designer.cs">
+      <DependentUpon>frmCategory.cs</DependentUpon>
     </Compile>
     <Compile Include="View\frmCreateUser.cs">
       <SubType>Form</SubType>
@@ -172,6 +199,12 @@
     <EmbeddedResource Include="View\frmAddAmount.resx">
       <DependentUpon>frmAddAmount.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\frmAddEarnings.resx">
+      <DependentUpon>frmAddEarnings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmAddExpenses.resx">
+      <DependentUpon>frmAddExpenses.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\frmAddHomeBudget.resx">
       <DependentUpon>frmAddHomeBudget.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,6 +213,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmCalculator.resx">
       <DependentUpon>frmCalculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmCategory.resx">
+      <DependentUpon>frmCategory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmCreateUser.resx">
       <DependentUpon>frmCreateUser.cs</DependentUpon>
@@ -196,6 +232,17 @@
     <EmbeddedResource Include="View\frmViewDetails.resx">
       <DependentUpon>frmViewDetails.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="BudgiDeskDBDataSet.xsc">
+      <DependentUpon>BudgiDeskDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BudgiDeskDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BudgiDeskDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BudgiDeskDBDataSet.xss">
+      <DependentUpon>BudgiDeskDBDataSet.xsd</DependentUpon>
+    </None>
     <None Include="ClassDiagram.cd" />
     <None Include="Model\BudgiDeskDB.dbml.layout">
       <DependentUpon>BudgiDeskDB.dbml</DependentUpon>
@@ -221,6 +268,7 @@
       <LastGenOutput>BudgiDeskDB.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

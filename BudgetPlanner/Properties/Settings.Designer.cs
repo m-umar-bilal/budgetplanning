@@ -32,5 +32,15 @@ namespace BudgetPlanner.Properties {
                 return ((string)(this["BudgetPlannerDBConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=MAQSOOD-PC;Initial Catalog=BudgiDeskDB;Integrated Security=True")]
+        public string BudgiDeskDBConnectionString {
+            get {
+                return ((string)(this["BudgiDeskDBConnectionString"]));
+            }
+        }
     }
 }

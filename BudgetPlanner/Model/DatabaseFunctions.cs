@@ -6,20 +6,12 @@ using System.Data;
 using System.Reflection;
 using System.Data.SqlClient;
 
-#region History
-/*
- * 30-Nov-2011 --- Created By Osama
- */
-#endregion 
+
 
 namespace BudgetPlanner.Model
 {
     
-    /// <summary>
-    /// A class which provides all the functionality related to databases, creating connection with DB
-    /// executing queries, getting information in dataTables or dataReader etc.
-    /// </summary>
-
+  
     public class DatabaseFunctions
     {
         private static BudgetPlannerDBDataContext _dataContext;

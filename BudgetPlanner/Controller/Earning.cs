@@ -1,18 +1,18 @@
-﻿using BudgiDesk.DAL;
+﻿using BudgetPlanner.Model;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 
-namespace BudgiDesk.BLL
+namespace BudgetPlanner.Controller
 {
     class Earning
     {
       public int ErID { get; set; }
       public int Price  { get; set; }
       public DateTime Date { get; set; }
-      public  int UID { get; set; }
+      public  String UID { get; set; }
 
         public BudgetPlanner.Model.AmountSpent AmountSpent
         {
@@ -26,10 +26,10 @@ namespace BudgiDesk.BLL
             }
         }
 
-        public static DataSet getEarning(String date)
+      /*  public static DataSet getEarning(String date)
       {
-          return EarningDb.getEarning(date);
-      }
+         // return EarningDb.getEarning(date);
+      }*/
       public static Earning getSingleEarning(int erid)
       {
           return EarningDb.getSingleEarning(erid);

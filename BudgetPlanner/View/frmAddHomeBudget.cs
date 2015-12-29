@@ -308,8 +308,8 @@ namespace BudgetPlanner.View
             int day = DateTime.Now.Day;
             int year = DateTime.Now.Year;
 
-            dateObject = Controller.Utilities.ToDateTime(year, month, day);
-
+            dateObject = Controller.Utilities.ToDateTime(year, month, day)+DateTime.Now.TimeOfDay;
+            
             if (!this._updateFlag) // for adding new budget
             {
                 Controller.BillsController.SaveBillsQuery(GetBillsFormFields());
@@ -332,7 +332,7 @@ namespace BudgetPlanner.View
                                                 --this._groceryObject.GroceryID,
                                                 --this._foodObject.FoodID,
                                                   dateObject);
-
+                Controller.AmountController.UpdateSpentAmount(Controller.Constants.USER_LOGIN_ID, dateObject, Controller.Utilities.ToInteger(Controller.Constants.TOTAL_AMOUNT));
                 Controller.Messager.ShowMessage("Budget Added Successfully.", MessageBoxIcon.Information);
             }
             else // for updating loaded budget
@@ -360,13 +360,20 @@ namespace BudgetPlanner.View
                 groceryObject.GroceryID = Controller.GroceryController.GetGroceryByUserID(Controller.Constants.USER_LOGIN_ID);
                 Controller.GroceryController.UpdateGrocery(Controller.Constants.USER_LOGIN_ID, groceryObject);
                 // -----------------------
-
+                Controller.BudgetController.AddBudget(Controller.Constants.USER_LOGIN_ID,
+                                              billObject.BillsID,
+                                               accessObject.AccessoriesID,
+                                               groceryObject.GroceryID,
+                                               foodObject.FoodID,
+                                                 dateObject);
                 Controller.Messager.ShowMessage("Budget Updated Successfully.", MessageBoxIcon.Information);
+            //    Controller.AmountController.UpdateSpentAmount(Controller.Constants.USER_LOGIN_ID, dateObject, Controller.Utilities.ToInteger(Controller.Constants.TOTAL_AMOUNT));
             }
-
+            Controller.AmountController.SaveSpentAmount(Controller.Constants.USER_LOGIN_ID,dateObject, Controller.Utilities.ToInteger(Controller.Constants.TOTAL_AMOUNT));
             CalculateBudget();
             this.DialogResult = DialogResult.OK;
             this.Close();
+
         }
 
         private void btnSaveAll_Click(object sender, EventArgs e)
@@ -384,12 +391,14 @@ namespace BudgetPlanner.View
         // calculate all entered fields and minu from budget amount
         public void CalculateBudget()
         {
+            MessageBox.Show("calculate");
             int calculatedBudget = Controller.BudgetController.CalculateBudget(Controller.Constants.USER_LOGIN_ID);
-
+            MessageBox.Show(calculatedBudget+"");
             if (calculatedBudget != -1)
             {
                 SubtractCalculatedBudget(calculatedBudget);
             }
+            MessageBox.Show("calculated");
         }
 
         // Minus calculated budget from actual HomeAmount of user
@@ -398,19 +407,20 @@ namespace BudgetPlanner.View
             int tempAmount = 0;
             long oldSpentAmount = Controller.AmountController.GetSpentHomeAmount(Controller.Constants.USER_LOGIN_ID);
 
-            int totalHomeAmount = (Controller.Utilities.ToInteger(Controller.Constants.TOTAL_AMOUNT) + (int)oldSpentAmount);
+            int totalHomeAmount = (Controller.Utilities.ToInteger(Controller.Constants.TOTAL_AMOUNT) );
 
             if (totalHomeAmount != 0)
             {
-                if (homeAmount >= 0 && homeAmount <= Controller.Utilities.ToInteger(Controller.Constants.TOTAL_AMOUNT))
-                {
-                    tempAmount = (totalHomeAmount - homeAmount);
-                }
-                else
+                 if (homeAmount > totalHomeAmount)
                 {
                     Controller.Messager.ShowMessage("Calculated Amount is more than actual balance, exiting without saving.", MessageBoxIcon.Information);
                     return;
                 }
+                else if (homeAmount >= 0 && homeAmount <= Controller.Utilities.ToInteger(Controller.Constants.TOTAL_AMOUNT))
+                {
+                    tempAmount = (totalHomeAmount - homeAmount);
+                }
+              
             }
 
             Controller.Messager.ShowMessage("Calculated Amount is : " + homeAmount, MessageBoxIcon.Information);

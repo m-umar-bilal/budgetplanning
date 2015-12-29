@@ -1,5 +1,5 @@
 ﻿using BudgetPlanner.Controller;
-using BudgiDesk.BLL;
+using BudgetPlanner.Controller;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace BudgiDesk.DAL
+namespace BudgetPlanner.Model
 {
     class CategoryDb
     {
@@ -21,29 +21,37 @@ namespace BudgiDesk.DAL
             SqlCommand cmd2 = new SqlCommand(query2, cnn);
             cnn.Open();
             SqlDataReader ds = cmd2.ExecuteReader();
-            cnn.Close();
+            
             bool a = false;
             try
             {
-                if (ds.IsClosed)
+                if (!(ds.HasRows))
+                {
+                    cnn.Close();
+                  
+                    String query = "INSERT INTO Category (CName) VALUES('" + c.Name + "')";
+                    SqlCommand cmd = new SqlCommand(query, cnn);
+
+                    cnn.Open();
+                    int x = cmd.ExecuteNonQuery();
+                    cnn.Close();
+                    
+                }
+                else
                 {
                     MessageBox.Show("Category Already Exist");
+                    cnn.Close();
                 }
             }
 
             catch (Exception ex)
             {
                
-                String query = "INSERT INTO Category (CName) VALUES('" + c.Name + "')";
-                SqlCommand cmd = new SqlCommand(query, cnn);
-
-                cnn.Open();
-                int x = cmd.ExecuteNonQuery();
-                cnn.Close();
-            }
                
+            }
 
-                return true;
+
+            return false; ;
 
             
         }
@@ -80,8 +88,8 @@ namespace BudgiDesk.DAL
             SqlCommand cmd2 = new SqlCommand(query2, cnn);
             cnn.Open();
             SqlDataReader ds = cmd2.ExecuteReader();
-            cnn.Close();
-            bool a = false;
+           
+        
             try
             {
                 if (ds.Read())
@@ -90,7 +98,8 @@ namespace BudgiDesk.DAL
                     cat.Name = ds.GetString(2);
                     
                 }
-                return null;
+                cnn.Close();
+                return cat;
             }
 
             catch (Exception ex)
@@ -110,6 +119,45 @@ namespace BudgiDesk.DAL
             return ds;
         }
 
+        public static List<Category> getCategoriesInList()
+        {
+     
+            List<Category> list= new List<Category>();
+           String query2 = "Select * from category";
+            SqlCommand cmd2 = new SqlCommand(query2, cnn);
+            cnn.Open();
+            SqlDataReader ds = cmd2.ExecuteReader();
+           
+      
+            try
+            {
+              
+                if(ds.HasRows)
+                {
+                    while(ds.Read())
+                    {
+                    Category cat = new Category();
+                    cat.CID = ds.GetInt32(0);
+                    cat.Name = ds.GetString(1);
+                    list.Add(cat);
+                   
+                    }
+                    cnn.Close();
+                    return list;
+                }
+
+                cnn.Close();
+            }
+
+            catch (Exception ex)
+            {
+           
+
+            }
+                
+                return null; ;
+
+        }
 
 
        }

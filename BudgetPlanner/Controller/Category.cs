@@ -1,11 +1,11 @@
-﻿using BudgiDesk.DAL;
+﻿using BudgetPlanner.Model;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 
-namespace BudgiDesk.BLL
+namespace BudgetPlanner.Controller
 {
     partial class Category
     {

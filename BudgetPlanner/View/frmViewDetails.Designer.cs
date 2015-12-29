@@ -42,21 +42,31 @@
             this.btnHome = new CloudToolkitN6.Windows.Vista.CloudStartMenuButton();
             this.dgvInfo = new System.Windows.Forms.DataGridView();
             this.btnDone = new CloudToolkitN6.CloudDesktopButton();
-            this.grpHomeCategory = new CloudToolkitN6.CloudGroup();
+            this.grpHome = new CloudToolkitN6.CloudGroup();
             this.btnGrocery = new CloudToolkitN6.CloudDesktopButton();
             this.btnAccess = new CloudToolkitN6.CloudDesktopButton();
             this.btnBill = new CloudToolkitN6.CloudDesktopButton();
             this.btnFood = new CloudToolkitN6.CloudDesktopButton();
+            this.chkMonth = new System.Windows.Forms.CheckBox();
+            this.chkYear = new System.Windows.Forms.CheckBox();
+            this.chkDay = new System.Windows.Forms.CheckBox();
+            this.grpPersonal = new CloudToolkitN6.CloudGroup();
+            this.cloudDesktopButton3 = new CloudToolkitN6.CloudDesktopButton();
+            this.cloudDesktopButton4 = new CloudToolkitN6.CloudDesktopButton();
             this.panel2.SuspendLayout();
             this.grpCategory.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfo)).BeginInit();
-            this.grpHomeCategory.SuspendLayout();
+            this.grpHome.SuspendLayout();
+            this.grpPersonal.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackgroundImage = global::BudgetPlanner.Properties.Resources.images;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.chkDay);
+            this.panel2.Controls.Add(this.chkYear);
+            this.panel2.Controls.Add(this.chkMonth);
             this.panel2.Controls.Add(this.btnSearch);
             this.panel2.Controls.Add(this.chkAll);
             this.panel2.Controls.Add(this.label4);
@@ -93,7 +103,7 @@
             this.chkAll.BackColor = System.Drawing.Color.Transparent;
             this.chkAll.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkAll.ForeColor = System.Drawing.Color.DimGray;
-            this.chkAll.Location = new System.Drawing.Point(9, 54);
+            this.chkAll.Location = new System.Drawing.Point(9, 53);
             this.chkAll.Name = "chkAll";
             this.chkAll.Size = new System.Drawing.Size(40, 19);
             this.chkAll.TabIndex = 47;
@@ -275,39 +285,39 @@
             this.btnDone.TabIndex = 63;
             this.btnDone.Click += new System.EventHandler(this.btnDone_Click);
             // 
-            // grpHomeCategory
+            // grpHome
             // 
-            this.grpHomeCategory.AnimationEnabled = true;
-            this.grpHomeCategory.AnimationSpeed = 4;
-            this.grpHomeCategory.BackColor = System.Drawing.Color.Transparent;
-            this.grpHomeCategory.BackgroundImage = global::BudgetPlanner.Properties.Resources.straight_grey_plain_design_1;
-            this.grpHomeCategory.BorderColor = System.Drawing.Color.DimGray;
-            this.grpHomeCategory.BorderWidth = 1F;
-            this.grpHomeCategory.Controls.Add(this.btnGrocery);
-            this.grpHomeCategory.Controls.Add(this.btnAccess);
-            this.grpHomeCategory.Controls.Add(this.btnBill);
-            this.grpHomeCategory.Controls.Add(this.btnFood);
-            this.grpHomeCategory.FillColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(222)))), ((int)(((byte)(241)))));
-            this.grpHomeCategory.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(222)))), ((int)(((byte)(241)))));
-            this.grpHomeCategory.FillColor2_1 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(222)))), ((int)(((byte)(241)))));
-            this.grpHomeCategory.FillColor2_2 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(222)))), ((int)(((byte)(241)))));
-            this.grpHomeCategory.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpHomeCategory.FontColorMouseOn = System.Drawing.Color.DimGray;
-            this.grpHomeCategory.FontColorNormal = System.Drawing.Color.DimGray;
-            this.grpHomeCategory.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.grpHomeCategory.HeaderCenter = global::BudgetPlanner.Properties.Resources.straight_grey_plain_design_1;
-            this.grpHomeCategory.HeaderText = "              Home Category";
-            this.grpHomeCategory.Icon = global::BudgetPlanner.Properties.Resources.navigate_down_icon;
-            this.grpHomeCategory.IconAlign = CloudToolkitN6.CloudHeader.IconAlignement.Left;
-            this.grpHomeCategory.IconPadding = 5;
-            this.grpHomeCategory.ImageHeader = false;
-            this.grpHomeCategory.IsOpen = true;
-            this.grpHomeCategory.Location = new System.Drawing.Point(4, 300);
-            this.grpHomeCategory.MaximumHeight = 77;
-            this.grpHomeCategory.Name = "grpHomeCategory";
-            this.grpHomeCategory.PanelColor = System.Drawing.Color.DimGray;
-            this.grpHomeCategory.Size = new System.Drawing.Size(245, 72);
-            this.grpHomeCategory.TabIndex = 65;
+            this.grpHome.AnimationEnabled = true;
+            this.grpHome.AnimationSpeed = 4;
+            this.grpHome.BackColor = System.Drawing.Color.Transparent;
+            this.grpHome.BackgroundImage = global::BudgetPlanner.Properties.Resources.straight_grey_plain_design_1;
+            this.grpHome.BorderColor = System.Drawing.Color.DimGray;
+            this.grpHome.BorderWidth = 1F;
+            this.grpHome.Controls.Add(this.btnGrocery);
+            this.grpHome.Controls.Add(this.btnAccess);
+            this.grpHome.Controls.Add(this.btnBill);
+            this.grpHome.Controls.Add(this.btnFood);
+            this.grpHome.FillColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(222)))), ((int)(((byte)(241)))));
+            this.grpHome.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(222)))), ((int)(((byte)(241)))));
+            this.grpHome.FillColor2_1 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(222)))), ((int)(((byte)(241)))));
+            this.grpHome.FillColor2_2 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(222)))), ((int)(((byte)(241)))));
+            this.grpHome.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpHome.FontColorMouseOn = System.Drawing.Color.DimGray;
+            this.grpHome.FontColorNormal = System.Drawing.Color.DimGray;
+            this.grpHome.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.grpHome.HeaderCenter = global::BudgetPlanner.Properties.Resources.straight_grey_plain_design_1;
+            this.grpHome.HeaderText = "              Home Category";
+            this.grpHome.Icon = global::BudgetPlanner.Properties.Resources.navigate_down_icon;
+            this.grpHome.IconAlign = CloudToolkitN6.CloudHeader.IconAlignement.Left;
+            this.grpHome.IconPadding = 5;
+            this.grpHome.ImageHeader = false;
+            this.grpHome.IsOpen = true;
+            this.grpHome.Location = new System.Drawing.Point(4, 300);
+            this.grpHome.MaximumHeight = 77;
+            this.grpHome.Name = "grpHome";
+            this.grpHome.PanelColor = System.Drawing.Color.DimGray;
+            this.grpHome.Size = new System.Drawing.Size(245, 72);
+            this.grpHome.TabIndex = 65;
             // 
             // btnGrocery
             // 
@@ -401,6 +411,130 @@
             this.btnFood.TabIndex = 42;
             this.btnFood.Click += new System.EventHandler(this.btnFood_Click);
             // 
+            // chkMonth
+            // 
+            this.chkMonth.AutoSize = true;
+            this.chkMonth.BackColor = System.Drawing.Color.Transparent;
+            this.chkMonth.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkMonth.ForeColor = System.Drawing.Color.DimGray;
+            this.chkMonth.Location = new System.Drawing.Point(54, 53);
+            this.chkMonth.Name = "chkMonth";
+            this.chkMonth.Size = new System.Drawing.Size(63, 19);
+            this.chkMonth.TabIndex = 61;
+            this.chkMonth.Text = "Month";
+            this.chkMonth.UseVisualStyleBackColor = false;
+            this.chkMonth.CheckedChanged += new System.EventHandler(this.chkMonth_CheckedChanged);
+            // 
+            // chkYear
+            // 
+            this.chkYear.AutoSize = true;
+            this.chkYear.BackColor = System.Drawing.Color.Transparent;
+            this.chkYear.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkYear.ForeColor = System.Drawing.Color.DimGray;
+            this.chkYear.Location = new System.Drawing.Point(124, 53);
+            this.chkYear.Name = "chkYear";
+            this.chkYear.Size = new System.Drawing.Size(50, 19);
+            this.chkYear.TabIndex = 62;
+            this.chkYear.Text = "Year";
+            this.chkYear.UseVisualStyleBackColor = false;
+            this.chkYear.CheckedChanged += new System.EventHandler(this.chkYear_CheckedChanged);
+            // 
+            // chkDay
+            // 
+            this.chkDay.AutoSize = true;
+            this.chkDay.BackColor = System.Drawing.Color.Transparent;
+            this.chkDay.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkDay.ForeColor = System.Drawing.Color.DimGray;
+            this.chkDay.Location = new System.Drawing.Point(180, 53);
+            this.chkDay.Name = "chkDay";
+            this.chkDay.Size = new System.Drawing.Size(46, 19);
+            this.chkDay.TabIndex = 63;
+            this.chkDay.Text = "Day";
+            this.chkDay.UseVisualStyleBackColor = false;
+            this.chkDay.CheckedChanged += new System.EventHandler(this.chkDay_CheckedChanged);
+            // 
+            // grpPersonal
+            // 
+            this.grpPersonal.AnimationEnabled = true;
+            this.grpPersonal.AnimationSpeed = 4;
+            this.grpPersonal.BackColor = System.Drawing.Color.Transparent;
+            this.grpPersonal.BackgroundImage = global::BudgetPlanner.Properties.Resources.straight_grey_plain_design_1;
+            this.grpPersonal.BorderColor = System.Drawing.Color.DimGray;
+            this.grpPersonal.BorderWidth = 1F;
+            this.grpPersonal.Controls.Add(this.cloudDesktopButton3);
+            this.grpPersonal.Controls.Add(this.cloudDesktopButton4);
+            this.grpPersonal.FillColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(222)))), ((int)(((byte)(241)))));
+            this.grpPersonal.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(222)))), ((int)(((byte)(241)))));
+            this.grpPersonal.FillColor2_1 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(222)))), ((int)(((byte)(241)))));
+            this.grpPersonal.FillColor2_2 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(222)))), ((int)(((byte)(241)))));
+            this.grpPersonal.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpPersonal.FontColorMouseOn = System.Drawing.Color.DimGray;
+            this.grpPersonal.FontColorNormal = System.Drawing.Color.DimGray;
+            this.grpPersonal.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.grpPersonal.HeaderCenter = global::BudgetPlanner.Properties.Resources.straight_grey_plain_design_1;
+            this.grpPersonal.HeaderText = "       Personal";
+            this.grpPersonal.Icon = global::BudgetPlanner.Properties.Resources.navigate_down_icon;
+            this.grpPersonal.IconAlign = CloudToolkitN6.CloudHeader.IconAlignement.Left;
+            this.grpPersonal.IconPadding = 5;
+            this.grpPersonal.ImageHeader = false;
+            this.grpPersonal.IsOpen = true;
+            this.grpPersonal.Location = new System.Drawing.Point(265, 298);
+            this.grpPersonal.MaximumHeight = 77;
+            this.grpPersonal.Name = "grpPersonal";
+            this.grpPersonal.PanelColor = System.Drawing.Color.DimGray;
+            this.grpPersonal.Size = new System.Drawing.Size(132, 72);
+            this.grpPersonal.TabIndex = 66;
+            // 
+            // cloudDesktopButton3
+            // 
+            this.cloudDesktopButton3.AnimationSpeed = 5;
+            this.cloudDesktopButton3.BackColor = System.Drawing.Color.Transparent;
+            this.cloudDesktopButton3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cloudDesktopButton3.BackgroundImage")));
+            this.cloudDesktopButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.cloudDesktopButton3.BackgroundOpacity = 100;
+            this.cloudDesktopButton3.BackgroundOpacity_MouseDown = 170;
+            this.cloudDesktopButton3.BorderColor = System.Drawing.Color.White;
+            this.cloudDesktopButton3.BorderOpacity = 170;
+            this.cloudDesktopButton3.BorderWidth = 1;
+            this.cloudDesktopButton3.ControlText = "";
+            this.cloudDesktopButton3.CornerRadius = 12;
+            this.cloudDesktopButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cloudDesktopButton3.DrawBlackTextBackground = true;
+            this.cloudDesktopButton3.FillColor = System.Drawing.SystemColors.ButtonShadow;
+            this.cloudDesktopButton3.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cloudDesktopButton3.ForeColor = System.Drawing.Color.DimGray;
+            this.cloudDesktopButton3.Icon = null;
+            this.cloudDesktopButton3.Location = new System.Drawing.Point(79, 30);
+            this.cloudDesktopButton3.Name = "cloudDesktopButton3";
+            this.cloudDesktopButton3.Size = new System.Drawing.Size(50, 39);
+            this.cloudDesktopButton3.TabIndex = 43;
+            this.cloudDesktopButton3.Click += new System.EventHandler(this.cloudDesktopButton3_Click);
+            // 
+            // cloudDesktopButton4
+            // 
+            this.cloudDesktopButton4.AnimationSpeed = 5;
+            this.cloudDesktopButton4.BackColor = System.Drawing.Color.Transparent;
+            this.cloudDesktopButton4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cloudDesktopButton4.BackgroundImage")));
+            this.cloudDesktopButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.cloudDesktopButton4.BackgroundOpacity = 100;
+            this.cloudDesktopButton4.BackgroundOpacity_MouseDown = 170;
+            this.cloudDesktopButton4.BorderColor = System.Drawing.Color.White;
+            this.cloudDesktopButton4.BorderOpacity = 170;
+            this.cloudDesktopButton4.BorderWidth = 1;
+            this.cloudDesktopButton4.ControlText = "";
+            this.cloudDesktopButton4.CornerRadius = 12;
+            this.cloudDesktopButton4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cloudDesktopButton4.DrawBlackTextBackground = true;
+            this.cloudDesktopButton4.FillColor = System.Drawing.SystemColors.ButtonShadow;
+            this.cloudDesktopButton4.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cloudDesktopButton4.ForeColor = System.Drawing.Color.DimGray;
+            this.cloudDesktopButton4.Icon = null;
+            this.cloudDesktopButton4.Location = new System.Drawing.Point(9, 32);
+            this.cloudDesktopButton4.Name = "cloudDesktopButton4";
+            this.cloudDesktopButton4.Size = new System.Drawing.Size(50, 39);
+            this.cloudDesktopButton4.TabIndex = 42;
+            this.cloudDesktopButton4.Click += new System.EventHandler(this.cloudDesktopButton4_Click);
+            // 
             // frmViewDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -408,7 +542,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(569, 382);
-            this.Controls.Add(this.grpHomeCategory);
+            this.Controls.Add(this.grpPersonal);
+            this.Controls.Add(this.grpHome);
             this.Controls.Add(this.btnDone);
             this.Controls.Add(this.dgvInfo);
             this.Controls.Add(this.grpCategory);
@@ -424,7 +559,8 @@
             this.panel2.PerformLayout();
             this.grpCategory.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfo)).EndInit();
-            this.grpHomeCategory.ResumeLayout(false);
+            this.grpHome.ResumeLayout(false);
+            this.grpPersonal.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -441,10 +577,16 @@
         private CloudToolkitN6.Windows.Vista.CloudStartMenuButton btnPersonal;
         private CloudToolkitN6.Windows.Vista.CloudStartMenuButton btnHome;
         private CloudToolkitN6.CloudDesktopButton btnSearch;
-        private CloudToolkitN6.CloudGroup grpHomeCategory;
+        private CloudToolkitN6.CloudGroup grpHome;
         private CloudToolkitN6.CloudDesktopButton btnGrocery;
         private CloudToolkitN6.CloudDesktopButton btnAccess;
         private CloudToolkitN6.CloudDesktopButton btnBill;
         private CloudToolkitN6.CloudDesktopButton btnFood;
+        private System.Windows.Forms.CheckBox chkDay;
+        private System.Windows.Forms.CheckBox chkYear;
+        private System.Windows.Forms.CheckBox chkMonth;
+        private CloudToolkitN6.CloudGroup grpPersonal;
+        private CloudToolkitN6.CloudDesktopButton cloudDesktopButton4;
+        private CloudToolkitN6.CloudDesktopButton cloudDesktopButton3;
     }
 }

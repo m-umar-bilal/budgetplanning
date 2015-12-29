@@ -4,11 +4,6 @@ using System.Linq;
 using System.Text;
 using BudgetPlanner.Controller;
 
-#region History
-/*
- * 30-Nov-2011 --- Created By Osama
- */
-#endregion
 
 namespace BudgetPlanner.Model
 {

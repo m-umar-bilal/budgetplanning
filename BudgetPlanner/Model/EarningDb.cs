@@ -1,5 +1,5 @@
 ﻿using BudgetPlanner.Controller;
-using BudgiDesk.BLL;
+using BudgetPlanner.Controller;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace BudgiDesk.DAL
+namespace BudgetPlanner.Model
 {
     class EarningDb
     {
@@ -18,15 +18,16 @@ namespace BudgiDesk.DAL
 
            public static bool addEarning(Earning earning)
              {
+                 String query2 = "";
             try
             {
-            String query2 = "Insert into earning(price,uid,date) values ( "+earning.Price+","+earning.UID+","+earning.Date+")";
+            query2 = "Insert into earning(price,uid,date) values ( "+earning.Price+",'"+earning.UID+"','"+earning.Date+"')";
             SqlCommand cmd2 = new SqlCommand(query2, cnn);
             cnn.Open();
             int a =cmd2.ExecuteNonQuery();
             cnn.Close();
+
             
-           
                 if (a>0)
                 {
                    return true;
@@ -36,6 +37,9 @@ namespace BudgiDesk.DAL
 
             catch (Exception ex)
             {
+
+               
+                MessageBox.Show(ex.StackTrace);
                 return false;
             }
           
@@ -110,7 +114,7 @@ namespace BudgiDesk.DAL
                  if (ds.Read())
                  {
                      earning.Price = ds.GetInt32(2);
-                     earning.UID = ds.GetInt32(3);
+                     earning.UID = ds.GetString(3);
                      earning.Date = ds.GetDateTime(4);
 
                  }
@@ -152,12 +156,196 @@ namespace BudgiDesk.DAL
             }
         }
 
-        public static DataSet getEarning(String date)
+        public static DataTable getEarning(String date, String UID)
         {
-            SqlDataAdapter Adapter = new SqlDataAdapter("SELECT * from earning where date like '"+date+"' ", cnn);
-            DataSet ds = new DataSet();
-            Adapter.Fill(ds);
-            return ds;
+
+            String query2 = "Select Price,CONVERT(date,GETDATE()) from earning where UID = '" + UID + "' and CONVERT(date,GETDATE()) = '" + date + "'";
+
+          
+            SqlCommand cmd2 = new SqlCommand(query2, cnn);
+            cnn.Open();
+            SqlDataReader ds = cmd2.ExecuteReader();
+
+
+            try
+            {
+
+                DataTable table = new DataTable();
+                table.Columns.Add("Price", typeof(int));
+                table.Columns.Add("Date", typeof(String));
+
+
+
+
+
+                if (ds.HasRows)
+                {
+                    while (ds.Read())
+                    {
+                       table.Rows.Add(ds.GetInt32(0), ds.GetString(1));
+
+
+
+                    }
+                    cnn.Close();
+                    return table;
+                }
+
+                cnn.Close();
+            }
+
+            catch (Exception ex)
+            {
+
+                cnn.Close();
+                MessageBox.Show(ex.StackTrace);
+            }
+
+            return null;
+
+        }
+
+        public static DataTable getALLEarning(String date, String UID)
+        {
+
+            String query2 = "Select Price,Date from earning where UID= '" + UID + "' and date like  =  '" + date + "'";
+          
+            SqlCommand cmd2 = new SqlCommand(query2, cnn);
+            cnn.Open();
+            SqlDataReader ds = cmd2.ExecuteReader();
+
+
+            try
+            {
+
+                DataTable table = new DataTable();
+                table.Columns.Add("Price", typeof(int));
+                table.Columns.Add("Date", typeof(String));
+
+
+
+
+
+                if (ds.HasRows)
+                {
+                    while (ds.Read())
+                    {
+                        table.Rows.Add(ds.GetInt32(0), ds.GetString(1));
+
+
+
+                    }
+                    cnn.Close();
+                    return table;
+                }
+
+                cnn.Close();
+            }
+
+            catch (Exception ex)
+            {
+
+                cnn.Close();
+                MessageBox.Show(ex.StackTrace);
+            }
+
+            return null;
+
+        }
+
+
+        public static DataTable getEarningOfMonth(String date, String UID)
+        {
+
+
+            String query2 = "Select Price,Date from earning where UID= '" + UID + "' and Month(CONVERT(date,GETDATE())) =  '" + date + "'";
+            SqlCommand cmd2 = new SqlCommand(query2, cnn);
+            cnn.Open();
+            SqlDataReader ds = cmd2.ExecuteReader();
+
+
+            try
+            {
+
+                DataTable table = new DataTable();
+                table.Columns.Add("Price", typeof(int));
+                table.Columns.Add("Date", typeof(String));
+                
+
+
+
+
+                if (ds.HasRows)
+                {
+                    while (ds.Read())
+                    {
+                        table.Rows.Add(ds.GetInt32(0), ds.GetString(1));
+
+
+                    }
+                    cnn.Close();
+                    return table;
+                }
+
+                cnn.Close();
+            }
+
+            catch (Exception ex)
+            {
+
+                cnn.Close();
+            }
+
+            return null;
+
+        }
+
+
+        public static DataTable getEarningOfYear(String date, String UID)
+        {
+            String query2 = "Select Price,Date from earning where UID= '" + UID + "' and year(CONVERT(date,GETDATE())) =  '" + date + "'";
+
+            
+            SqlCommand cmd2 = new SqlCommand(query2, cnn);
+            cnn.Open();
+            SqlDataReader ds = cmd2.ExecuteReader();
+
+
+            try
+            {
+
+                DataTable table = new DataTable();
+                table.Columns.Add("Price", typeof(int));
+                table.Columns.Add("Date", typeof(String));
+
+
+
+
+
+                if (ds.HasRows)
+                {
+                    while (ds.Read())
+                    {
+                        table.Rows.Add(ds.GetInt32(0), ds.GetString(1));
+
+
+
+                    }
+                    cnn.Close();
+                    return table;
+                }
+
+                cnn.Close();
+            }
+
+            catch (Exception ex)
+            {
+
+                cnn.Close();
+            }
+
+            return null;
+
         }
     }
 }

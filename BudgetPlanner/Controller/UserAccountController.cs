@@ -3,11 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-#region History
-/*
- * 30-Nov-2011 --- Created By Osama
- */
-#endregion 
 
 namespace BudgetPlanner.Controller
 {

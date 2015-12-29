@@ -56,6 +56,9 @@ namespace BudgetPlanner.View
             Controller.Utilities.SetToolTipText(btnEditAmount, "Edit Amount");
         }
 
+  
+
+
         private void frmMain_Load(object sender, EventArgs e)
         {
             try
@@ -167,7 +170,7 @@ namespace BudgetPlanner.View
 
             if (Controller.Constants.FLAG)
             {
-                Form frmAddPersonalBud = new frmAddPersonalBudget();
+                Form frmAddPersonalBud = new frmAddPersonalBudget(ref lblAmount);
                 DialogResult dr = frmAddPersonalBud.ShowDialog();
 
                 if (dr == DialogResult.OK)

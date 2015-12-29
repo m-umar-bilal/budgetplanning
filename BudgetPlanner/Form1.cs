@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WhatsAppApi;
 
 namespace BudgetPlanner
 {
@@ -65,7 +66,7 @@ namespace BudgetPlanner
                     if (obj != null)
                     {
                         this.Hide();
-
+                        Controller.Constants.USER_LOGIN_PASS = txtPassword.Text;
                         Form frmMn = new frmMain(obj);
                         frmMn.ShowDialog();
                     }
@@ -115,6 +116,26 @@ namespace BudgetPlanner
 
         private void button2_Click(object sender, EventArgs e)
         {
+            /*WhatsApp wa = new WhatsApp("+923167552889", "VNf67y3WIJIFpcayJyaaPZikI14=", "pankaj", false, false);
+            wa.OnConnectSuccess += () =>
+            {
+                MessageBox.Show("connect");
+                wa.OnLoginSuccess += (phno, data) =>
+                {
+                    wa.SendMessage("+923227748058", "msg sent by umar");
+                };
+
+                wa.OnLoginFailed += (data) =>
+                {
+                    MessageBox.Show("login failed" + data);
+                };
+                wa.Login();
+            };
+            wa.OnConnectFailed += (ex) =>
+            {
+                MessageBox.Show("connection failed");
+            };
+            wa.Connect();*/
             try
             {
                 OK();

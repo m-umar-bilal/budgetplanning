@@ -9,12 +9,7 @@ using System.Threading;
 using System.ComponentModel;
 using System.Data;
 
-#region History
-/*
- * 17-Dec-2011 --- Fade form functionality added
- * 30-Nov-2011 --- Created By Osama
- */
-#endregion
+
 
 namespace BudgetPlanner.Controller
 {

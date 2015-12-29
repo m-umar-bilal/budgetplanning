@@ -3,11 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-#region History
-/*
- * 30-Nov-2011 --- Created By Osama
- */
-#endregion 
 
 namespace BudgetPlanner.Controller
 {
@@ -24,6 +19,7 @@ namespace BudgetPlanner.Controller
         public static Boolean FLAG = false;
         public static String FILE_NAME = Environment.SpecialFolder.DesktopDirectory + "BudgiDeskData.xml";
         public static String USER_LOGIN_ID = string.Empty;
+        public static String USER_LOGIN_PASS = string.Empty;
         public static String TOTAL_AMOUNT = string.Empty;
 
         public static String Category = string.Empty;

@@ -7,22 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-#region History
-/*
- * 15-Dec-2011 --- Amount subtracted issue fixed -- osama
- * 11-Dec-2011 --- Created By Osama
- */
-#endregion
 
 namespace BudgetPlanner.View
 {
     public partial class frmAddPersonalBudget : Form
     {
+        Label label;
         public frmAddPersonalBudget()
         {
             InitializeComponent();
         }
-
+        
+           public frmAddPersonalBudget(ref Label label):this()
+        {
+            this.label = label;
+        }
         private Controller.PersonalBudget _personalObject = null;
         private Controller.AmountController _amountObject = null;
         private bool _updateFlag = false;
@@ -49,19 +48,20 @@ namespace BudgetPlanner.View
 
         public Controller.PersonalBudget GetDataFromFields()
         {
-            this._personalObject = new Controller.PersonalBudget();
+            /*        this._personalObject = new Controller.PersonalBudget();
 
-            this._personalObject.UserID = Controller.Constants.USER_LOGIN_ID;
-            this._personalObject.BusFair = Controller.Utilities.ValidateFields(txtFair.Text);
-            this._personalObject.WithFriends = Controller.Utilities.ValidateFields(txtFriends.Text);
-            this._personalObject.Gifts = Controller.Utilities.ValidateFields(txtGifts.Text);
-            this._personalObject.OnMySelf = Controller.Utilities.ValidateFields(txtMyself.Text);
-            this._personalObject.Extra = Controller.Utilities.ValidateFields(txtExtra.Text);
-            this._personalObject.Clothes = Controller.Utilities.ValidateFields(txtClothes.Text);
-            this._personalObject.Phone = Controller.Utilities.ValidateFields(txtPhone.Text);
-            this._personalObject.Date = Convert.ToDateTime(dtPicker.Text);
+                    this._personalObject.UserID = Controller.Constants.USER_LOGIN_ID;
+                    this._personalObject.BusFair = Controller.Utilities.ValidateFields(txtFair.Text);
+                    this._personalObject.WithFriends = Controller.Utilities.ValidateFields(txtFriends.Text);
+                    this._personalObject.Gifts = Controller.Utilities.ValidateFields(txtGifts.Text);
+                    this._personalObject.OnMySelf = Controller.Utilities.ValidateFields(txtMyself.Text);
+                    this._personalObject.Extra = Controller.Utilities.ValidateFields(txtExtra.Text);
+                    this._personalObject.Clothes = Controller.Utilities.ValidateFields(txtClothes.Text);
+                    this._personalObject.Phone = Controller.Utilities.ValidateFields(txtPhone.Text);
+                    this._personalObject.Date = Convert.ToDateTime(dtPicker.Text);
 
-            return this._personalObject;
+                    return this._personalObject;*/
+            return null;//temporarily
         }
 
         public void LoadUserPersonalAmount(string userID)
@@ -71,18 +71,18 @@ namespace BudgetPlanner.View
             if (this._amountObject == null)
             {
                 // means no amount exists for the person he would have to add new amount
-                lblAmount.Text = "000";
+               // lblAmount.Text = "000";
                 return;
             }
 
-            lblAmount.Text = this._amountObject.PersonalAmount.ToString();
+          //  lblAmount.Text = this._amountObject.PersonalAmount.ToString();
             Controller.Constants.TOTAL_AMOUNT = this._amountObject.PersonalAmount.ToString();
         }
 
         public void LoadPersonalBudget(string userID, DateTime todaysDate)
         {
             DateTime myDateTime = Controller.Utilities.ToDateTime(todaysDate.Year, todaysDate.Month, todaysDate.Day);
-            Controller.PersonalBudget personalObject = Controller.BudgetController.LoadPersonalBudget(userID, myDateTime);
+         /*   Controller.PersonalBudget personalObject = Controller.BudgetController.LoadPersonalBudget(userID, myDateTime);
 
             if (personalObject == null)
             {
@@ -103,6 +103,7 @@ namespace BudgetPlanner.View
 
             btnSave.ControlText = "Update";
             btnSave.Icon = global::BudgetPlanner.Properties.Resources.addressbook_edit_icon;
+            */
         }
 
         public void Save()
@@ -117,8 +118,8 @@ namespace BudgetPlanner.View
                 Controller.BudgetController.UpdatePersonalBudget(GetDataFromFields());
                 Controller.Messager.ShowMessage("Personal Budget Updated Successfully.", MessageBoxIcon.Information);
                 this._updateFlag = true;
-                btnSave.ControlText = "Save";
-                btnSave.Icon = global::BudgetPlanner.Properties.Resources.Actions_document_save_all_icon;
+             //   btnSave.ControlText = "Save";
+               // btnSave.Icon = global::BudgetPlanner.Properties.Resources.Actions_document_save_all_icon;
             }
 
             CalculatePersonalBudget();
@@ -196,6 +197,7 @@ namespace BudgetPlanner.View
 
         private void frmAddPersonalBudget_Load(object sender, EventArgs e)
         {
+            CategoryToolTip.SetToolTip(btnAddCategory,"Add Category");
             try
             {
                 if (Controller.Constants.IS_ADMIN)
@@ -208,6 +210,29 @@ namespace BudgetPlanner.View
             {
                 Controller.Messager.ShowException(ex);
             }
+        }
+
+        private void btnAddCategory_Click(object sender, EventArgs e)
+        {
+            Form frmMn = new frmCategory();
+            DialogResult dr = frmMn.ShowDialog();
+        }
+
+        private void btnAddExpenses_Click(object sender, EventArgs e)
+        {
+            Form frmMn = new frmAddExpenses(ref label);
+            DialogResult dr = frmMn.ShowDialog();
+        }
+
+        private void frmAddPersonalBudget_FormClosed(object sender, FormClosedEventArgs e)
+        {
+
+        }
+
+        private void cloudDesktopButton1_Click(object sender, EventArgs e)
+        {
+            Form frmMn = new frmAddEarnings(ref label);
+            DialogResult dr = frmMn.ShowDialog();
         }
     }
 }

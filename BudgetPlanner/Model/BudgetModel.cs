@@ -303,10 +303,12 @@ namespace BudgetPlanner.Model
         {
             if (date != null)
             {
+                string txt = date+"";
+                string[] array = txt.Split(new char[] { ' ' }, 2);
                 var query =
                     (from budgetObject in DatabaseFunctions.DataContext.Budgets
                      where budgetObject.UserID.ToUpper().Equals(userID.ToUpper()) &&
-                           budgetObject.DateOfBudget.Equals(date)
+                           budgetObject.DateOfBudget.Date.Equals(txt)
                      select budgetObject);
                 
                 if (query != null)
