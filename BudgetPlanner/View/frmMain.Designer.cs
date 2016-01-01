@@ -34,7 +34,6 @@
             this.btnEditAmount = new CloudToolkitN6.CloudDesktopButton();
             this.label1 = new System.Windows.Forms.Label();
             this.lblAmount = new System.Windows.Forms.Label();
-            this.grpData = new CloudToolkitN6.CloudGroup();
             this.btnExport = new CloudToolkitN6.CloudDesktopButton();
             this.grpCategory = new CloudToolkitN6.CloudGroup();
             this.btnPersonal = new CloudToolkitN6.CloudDesktopButton();
@@ -55,19 +54,17 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.btnCalc = new CloudToolkitN6.CloudDesktopButton();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnCategory = new CloudToolkitN6.CloudDesktopButton();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.btnCreateUser = new CloudToolkitN6.CloudDesktopButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnEditDetails = new CloudToolkitN6.CloudDesktopButton();
             this.btnView = new CloudToolkitN6.CloudDesktopButton();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.digitalClock = new CloudToolkitN6.CloudDigitalClock();
             this.pnlAmount.SuspendLayout();
-            this.grpData.SuspendLayout();
             this.grpCategory.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxGender)).BeginInit();
             this.menuStrip.SuspendLayout();
@@ -92,7 +89,7 @@
             this.btnLogout.GlowColor = System.Drawing.Color.DimGray;
             this.btnLogout.Icon = global::BudgetPlanner.Properties.Resources.Log_Out_icon;
             this.btnLogout.IsAnimated = true;
-            this.btnLogout.Location = new System.Drawing.Point(213, -1);
+            this.btnLogout.Location = new System.Drawing.Point(590, 64);
             this.btnLogout.MaximumGlowOpacity = 0.8D;
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.NormalColors_1 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(222)))), ((int)(((byte)(241)))));
@@ -115,7 +112,7 @@
             this.pnlAmount.Controls.Add(this.btnEditAmount);
             this.pnlAmount.Controls.Add(this.label1);
             this.pnlAmount.Controls.Add(this.lblAmount);
-            this.pnlAmount.Location = new System.Drawing.Point(576, 432);
+            this.pnlAmount.Location = new System.Drawing.Point(576, 381);
             this.pnlAmount.Name = "pnlAmount";
             this.pnlAmount.Size = new System.Drawing.Size(129, 46);
             this.pnlAmount.TabIndex = 48;
@@ -167,42 +164,12 @@
             this.lblAmount.TabIndex = 46;
             this.lblAmount.Text = "______";
             // 
-            // grpData
-            // 
-            this.grpData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.grpData.AnimationEnabled = true;
-            this.grpData.AnimationSpeed = 5;
-            this.grpData.BackColor = System.Drawing.Color.Transparent;
-            this.grpData.BackgroundImage = global::BudgetPlanner.Properties.Resources.straight_grey_plain_design_1;
-            this.grpData.BorderColor = System.Drawing.Color.DarkGray;
-            this.grpData.BorderWidth = 1F;
-            this.grpData.Controls.Add(this.btnExport);
-            this.grpData.FillColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(222)))), ((int)(((byte)(241)))));
-            this.grpData.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(222)))), ((int)(((byte)(241)))));
-            this.grpData.FillColor2_1 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(222)))), ((int)(((byte)(241)))));
-            this.grpData.FillColor2_2 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(222)))), ((int)(((byte)(241)))));
-            this.grpData.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpData.FontColorMouseOn = System.Drawing.Color.DimGray;
-            this.grpData.FontColorNormal = System.Drawing.Color.DimGray;
-            this.grpData.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.grpData.HeaderCenter = global::BudgetPlanner.Properties.Resources.straight_grey_plain_design_1;
-            this.grpData.HeaderText = "";
-            this.grpData.Icon = global::BudgetPlanner.Properties.Resources.navigate_down_icon;
-            this.grpData.IconAlign = CloudToolkitN6.CloudHeader.IconAlignement.Center;
-            this.grpData.IconPadding = 5;
-            this.grpData.ImageHeader = false;
-            this.grpData.IsOpen = true;
-            this.grpData.Location = new System.Drawing.Point(634, 95);
-            this.grpData.MaximumHeight = 73;
-            this.grpData.Name = "grpData";
-            this.grpData.PanelColor = System.Drawing.Color.DimGray;
-            this.grpData.Size = new System.Drawing.Size(60, 73);
-            this.grpData.TabIndex = 40;
-            // 
             // btnExport
             // 
             this.btnExport.AnimationSpeed = 5;
             this.btnExport.BackColor = System.Drawing.Color.Transparent;
+            this.btnExport.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExport.BackgroundImage")));
+            this.btnExport.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnExport.BackgroundOpacity = 100;
             this.btnExport.BackgroundOpacity_MouseDown = 170;
             this.btnExport.BorderColor = System.Drawing.Color.White;
@@ -215,10 +182,10 @@
             this.btnExport.FillColor = System.Drawing.SystemColors.ButtonShadow;
             this.btnExport.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExport.ForeColor = System.Drawing.Color.DimGray;
-            this.btnExport.Icon = global::BudgetPlanner.Properties.Resources.Upload_icon;
-            this.btnExport.Location = new System.Drawing.Point(5, 30);
+            this.btnExport.Icon = null;
+            this.btnExport.Location = new System.Drawing.Point(3, 342);
             this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(50, 39);
+            this.btnExport.Size = new System.Drawing.Size(74, 53);
             this.btnExport.TabIndex = 40;
             this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
@@ -359,7 +326,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(203, 24);
+            this.menuStrip.Size = new System.Drawing.Size(217, 24);
             this.menuStrip.TabIndex = 2;
             this.menuStrip.Text = "menuStrip1";
             // 
@@ -368,7 +335,7 @@
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "&File";
             // 
             // exitToolStripMenuItem
@@ -385,14 +352,14 @@
             this.homeToolStripMenuItem,
             this.personalToolStripMenuItem});
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.settingsToolStripMenuItem.Text = "&Category";
             // 
             // homeToolStripMenuItem
             // 
             this.homeToolStripMenuItem.Image = global::BudgetPlanner.Properties.Resources.Actions_go_home_icon;
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.homeToolStripMenuItem.Text = "Home";
             this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
             // 
@@ -400,7 +367,7 @@
             // 
             this.personalToolStripMenuItem.Image = global::BudgetPlanner.Properties.Resources.man_icon;
             this.personalToolStripMenuItem.Name = "personalToolStripMenuItem";
-            this.personalToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.personalToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.personalToolStripMenuItem.Text = "Personal";
             this.personalToolStripMenuItem.Click += new System.EventHandler(this.personalToolStripMenuItem_Click);
             // 
@@ -410,14 +377,14 @@
             this.exportDataToolStripMenuItem,
             this.viewBudgetToolStripMenuItem});
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.optionsToolStripMenuItem.Text = "&Options";
             // 
             // exportDataToolStripMenuItem
             // 
             this.exportDataToolStripMenuItem.Image = global::BudgetPlanner.Properties.Resources.Upload_icon;
             this.exportDataToolStripMenuItem.Name = "exportDataToolStripMenuItem";
-            this.exportDataToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.exportDataToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.exportDataToolStripMenuItem.Text = "Export Data";
             this.exportDataToolStripMenuItem.Click += new System.EventHandler(this.exportDataToolStripMenuItem_Click);
             // 
@@ -425,7 +392,7 @@
             // 
             this.viewBudgetToolStripMenuItem.Image = global::BudgetPlanner.Properties.Resources.Actions_contact_date_icon;
             this.viewBudgetToolStripMenuItem.Name = "viewBudgetToolStripMenuItem";
-            this.viewBudgetToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.viewBudgetToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.viewBudgetToolStripMenuItem.Text = "View Budget";
             this.viewBudgetToolStripMenuItem.Click += new System.EventHandler(this.viewBudgetToolStripMenuItem_Click);
             // 
@@ -434,14 +401,14 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "&Help";
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Image = global::BudgetPlanner.Properties.Resources.Bin_Empty_icon;
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -451,31 +418,19 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel2.BackgroundImage = global::BudgetPlanner.Properties.Resources.images;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.btnCalc);
+            this.panel2.Controls.Add(this.btnExport);
             this.panel2.Controls.Add(this.panel7);
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.btnCategory);
             this.panel2.Controls.Add(this.panel5);
-            this.panel2.Controls.Add(this.btnCreateUser);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.btnEditDetails);
             this.panel2.Controls.Add(this.btnView);
             this.panel2.Location = new System.Drawing.Point(12, 108);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(82, 462);
+            this.panel2.Size = new System.Drawing.Size(82, 411);
             this.panel2.TabIndex = 36;
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.BackgroundImage = global::BudgetPlanner.Properties.Resources.light_grey_stippled;
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Location = new System.Drawing.Point(-3, 414);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(85, 10);
-            this.panel3.TabIndex = 42;
             // 
             // btnCalc
             // 
@@ -494,7 +449,7 @@
             this.btnCalc.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalc.ForeColor = System.Drawing.Color.DimGray;
             this.btnCalc.Icon = global::BudgetPlanner.Properties.Resources.calculator_icon;
-            this.btnCalc.Location = new System.Drawing.Point(0, 340);
+            this.btnCalc.Location = new System.Drawing.Point(0, 250);
             this.btnCalc.Name = "btnCalc";
             this.btnCalc.Size = new System.Drawing.Size(78, 72);
             this.btnCalc.TabIndex = 41;
@@ -556,29 +511,6 @@
             this.panel5.Size = new System.Drawing.Size(86, 10);
             this.panel5.TabIndex = 39;
             // 
-            // btnCreateUser
-            // 
-            this.btnCreateUser.AnimationSpeed = 5;
-            this.btnCreateUser.BackColor = System.Drawing.Color.Transparent;
-            this.btnCreateUser.BackgroundOpacity = 100;
-            this.btnCreateUser.BackgroundOpacity_MouseDown = 170;
-            this.btnCreateUser.BorderColor = System.Drawing.Color.White;
-            this.btnCreateUser.BorderOpacity = 170;
-            this.btnCreateUser.BorderWidth = 1;
-            this.btnCreateUser.ControlText = "Create User";
-            this.btnCreateUser.CornerRadius = 12;
-            this.btnCreateUser.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCreateUser.DrawBlackTextBackground = true;
-            this.btnCreateUser.FillColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnCreateUser.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreateUser.ForeColor = System.Drawing.Color.DimGray;
-            this.btnCreateUser.Icon = global::BudgetPlanner.Properties.Resources._1322905735_user_group_new;
-            this.btnCreateUser.Location = new System.Drawing.Point(1, 254);
-            this.btnCreateUser.Name = "btnCreateUser";
-            this.btnCreateUser.Size = new System.Drawing.Size(78, 72);
-            this.btnCreateUser.TabIndex = 38;
-            this.btnCreateUser.Click += new System.EventHandler(this.btnCreateUser_Click);
-            // 
             // panel4
             // 
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -636,6 +568,17 @@
             this.btnView.TabIndex = 38;
             this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.BackgroundImage = global::BudgetPlanner.Properties.Resources.light_grey_stippled;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Location = new System.Drawing.Point(11, 510);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(82, 10);
+            this.panel3.TabIndex = 42;
+            // 
             // digitalClock
             // 
             this.digitalClock.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -649,7 +592,7 @@
             this.digitalClock.DateFont = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.digitalClock.DrawDate = true;
             this.digitalClock.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.digitalClock.Location = new System.Drawing.Point(543, 19);
+            this.digitalClock.Location = new System.Drawing.Point(566, 0);
             this.digitalClock.Name = "digitalClock";
             this.digitalClock.NumberColor = System.Drawing.Color.White;
             this.digitalClock.NumberFont = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -661,10 +604,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(707, 574);
+            this.ClientSize = new System.Drawing.Size(707, 523);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.pnlAmount);
-            this.Controls.Add(this.grpData);
             this.Controls.Add(this.grpCategory);
             this.Controls.Add(this.picBoxGender);
             this.Controls.Add(this.digitalClock);
@@ -684,7 +627,6 @@
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.pnlAmount.ResumeLayout(false);
             this.pnlAmount.PerformLayout();
-            this.grpData.ResumeLayout(false);
             this.grpCategory.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picBoxGender)).EndInit();
             this.menuStrip.ResumeLayout(false);
@@ -712,7 +654,6 @@
         private CloudToolkitN6.CloudDesktopButton btnEditDetails;
         private CloudToolkitN6.CloudDesktopButton btnView;
         private System.Windows.Forms.Panel panel6;
-        private CloudToolkitN6.CloudDesktopButton btnCreateUser;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.PictureBox picBoxGender;
         private System.Windows.Forms.ToolStripMenuItem homeToolStripMenuItem;
@@ -722,7 +663,6 @@
         private CloudToolkitN6.CloudGroup grpCategory;
         private CloudToolkitN6.CloudDesktopButton btnHome;
         private CloudToolkitN6.CloudDesktopButton btnPersonal;
-        private CloudToolkitN6.CloudGroup grpData;
         private CloudToolkitN6.CloudDesktopButton btnExport;
         private System.Windows.Forms.Panel panel3;
         private CloudToolkitN6.CloudDesktopButton btnCalc;

@@ -4,11 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Data;
 
-#region History
-/*
-  
- */
-#endregion 
 
 namespace BudgetPlanner.Controller
 {

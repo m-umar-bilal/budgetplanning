@@ -16,6 +16,7 @@ namespace BudgetPlanner.View
         public frmCreateUser()
         {
             InitializeComponent();
+
         }
 
         private Controller.UserAccountController _userAccntObject = null;
@@ -322,6 +323,9 @@ namespace BudgetPlanner.View
 
         private void frmCreateUser_Load(object sender, EventArgs e)
         {
+            dgvUsers.Visible = false;
+            btnDelete.Visible = false;
+            btnEdit.Visible = false;
             try
             {
                 if (!this._flag)

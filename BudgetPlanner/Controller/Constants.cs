@@ -10,7 +10,7 @@ namespace BudgetPlanner.Controller
     {
         public static String APPLICATION_NAME = "Budgi Desk";
         public static String DATABASE_NAME = "BudgiDeskDB";
-        public static String CONNECTION_STRING = @"Data Source=MAQSOOD-PC;Initial Catalog=" + DATABASE_NAME + ";Integrated Security=true";
+        public static String CONNECTION_STRING = @"Data Source=HONEY-BEE;Initial Catalog=" + DATABASE_NAME + ";Integrated Security=true";
         public static String INPUT_VALUE = string.Empty;
         public static String WELCOME_NAME = string.Empty;
         public static Boolean GENDER_FLAG = false;

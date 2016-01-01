@@ -22,3 +22,51 @@ C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BudgetPlanner\Budge
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BudgetPlanner\BudgetPlanner\bin\Debug\WhatsAppApi.dll
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.View.frmAddExpenses.resources
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.View.frmAddEarnings.resources
+C:\Users\Abdullah\Desktop\31 JAN\BudgetPlanner\BudgetPlanner\bin\Debug\BudgetPlanner.exe.config
+C:\Users\Abdullah\Desktop\31 JAN\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.exe
+C:\Users\Abdullah\Desktop\31 JAN\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.pdb
+C:\Users\Abdullah\Desktop\31 JAN\BudgetPlanner\BudgetPlanner\bin\Debug\BudgetPlanner.exe
+C:\Users\Abdullah\Desktop\31 JAN\BudgetPlanner\BudgetPlanner\bin\Debug\BudgetPlanner.pdb
+C:\Users\Abdullah\Desktop\31 JAN\BudgetPlanner\BudgetPlanner\bin\Debug\WhatsAppApi.dll
+C:\Users\Abdullah\Desktop\31 JAN\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.csprojResolveAssemblyReference.cache
+C:\Users\Abdullah\Desktop\31 JAN\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.View.frmAbout.resources
+C:\Users\Abdullah\Desktop\31 JAN\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.View.frmAddAmount.resources
+C:\Users\Abdullah\Desktop\31 JAN\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.View.frmAddEarnings.resources
+C:\Users\Abdullah\Desktop\31 JAN\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.View.frmAddExpenses.resources
+C:\Users\Abdullah\Desktop\31 JAN\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.View.frmAddHomeBudget.resources
+C:\Users\Abdullah\Desktop\31 JAN\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.View.frmAddPersonalBudget.resources
+C:\Users\Abdullah\Desktop\31 JAN\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.View.frmCalculator.resources
+C:\Users\Abdullah\Desktop\31 JAN\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.View.frmCategory.resources
+C:\Users\Abdullah\Desktop\31 JAN\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.View.frmCreateUser.resources
+C:\Users\Abdullah\Desktop\31 JAN\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.View.frmExportData.resources
+C:\Users\Abdullah\Desktop\31 JAN\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.View.frmForgotUserDetail.resources
+C:\Users\Abdullah\Desktop\31 JAN\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.View.frmMain.resources
+C:\Users\Abdullah\Desktop\31 JAN\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.View.frmViewDetails.resources
+C:\Users\Abdullah\Desktop\31 JAN\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.Form1.resources
+C:\Users\Abdullah\Desktop\31 JAN\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.Properties.Resources.resources
+C:\Users\Abdullah\Desktop\31 JAN\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.View.frmLogin.resources
+C:\Users\Abdullah\Desktop\31 JAN\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.csproj.GenerateResource.Cache
+C:\Users\Abdullah\Desktop\latest\BudgetPlanner\BudgetPlanner\bin\Debug\BudgetPlanner.exe.config
+C:\Users\Abdullah\Desktop\latest\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.exe
+C:\Users\Abdullah\Desktop\latest\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.pdb
+C:\Users\Abdullah\Desktop\latest\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.csprojResolveAssemblyReference.cache
+C:\Users\Abdullah\Desktop\latest\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.Form1.resources
+C:\Users\Abdullah\Desktop\latest\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.View.frmAbout.resources
+C:\Users\Abdullah\Desktop\latest\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.View.frmAddAmount.resources
+C:\Users\Abdullah\Desktop\latest\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.View.frmAddEarnings.resources
+C:\Users\Abdullah\Desktop\latest\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.View.frmAddExpenses.resources
+C:\Users\Abdullah\Desktop\latest\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.View.frmAddHomeBudget.resources
+C:\Users\Abdullah\Desktop\latest\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.View.frmAddPersonalBudget.resources
+C:\Users\Abdullah\Desktop\latest\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.View.frmCalculator.resources
+C:\Users\Abdullah\Desktop\latest\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.View.frmCategory.resources
+C:\Users\Abdullah\Desktop\latest\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.View.frmCreateUser.resources
+C:\Users\Abdullah\Desktop\latest\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.View.frmExportData.resources
+C:\Users\Abdullah\Desktop\latest\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.View.frmForgotUserDetail.resources
+C:\Users\Abdullah\Desktop\latest\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.View.frmMain.resources
+C:\Users\Abdullah\Desktop\latest\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.View.frmViewDetails.resources
+C:\Users\Abdullah\Desktop\latest\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.Properties.Resources.resources
+C:\Users\Abdullah\Desktop\latest\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.View.frmLogin.resources
+C:\Users\Abdullah\Desktop\latest\BudgetPlanner\BudgetPlanner\obj\Debug\BudgetPlanner.csproj.GenerateResource.Cache
+C:\Users\Abdullah\Desktop\latest\BudgetPlanner\BudgetPlanner\bin\Debug\BudgetPlanner.exe
+C:\Users\Abdullah\Desktop\latest\BudgetPlanner\BudgetPlanner\bin\Debug\BudgetPlanner.pdb
+C:\Users\Abdullah\Desktop\latest\BudgetPlanner\BudgetPlanner\bin\Debug\WhatsAppApi.dll

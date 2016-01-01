@@ -23,6 +23,9 @@ namespace BudgetPlanner.View
         public frmExportData()
         {
             InitializeComponent();
+            Controller.Constants.Category = "HOME";
+            btnHome.Enabled = false;
+            btnPersonal.Enabled = true;
         }
 
         private String _fileName = string.Empty;
@@ -47,12 +50,11 @@ namespace BudgetPlanner.View
 
         public int GetSelectedFormat()
         {
-            if (rdbCSVFormat.Checked)
-                return 1;
-            else if (rdbExcelFile.Checked)
+           
+             
                 return 2;
 
-            return -1;
+
         }
 
         public void OK()
@@ -75,10 +77,7 @@ namespace BudgetPlanner.View
                     {
                         ExportDataToExcelFile(this._fileName);
                     }
-                    else if (extension.ToUpper().Equals(".txt".ToUpper()))
-                    {
-                        ExportDataToTextFile(this._fileName);
-                    }
+                   
                 }
             }
             else
@@ -105,8 +104,8 @@ namespace BudgetPlanner.View
         public void BrowseFiles()
         {
             SaveFileDialog fileDialog = new SaveFileDialog();
-            fileDialog.Filter = "Text File (*.txt)|*.txt|Excel Sheet File(*.xls)|*.xls";
-            fileDialog.Title = "Select A File To Export Information In It";
+            fileDialog.Filter = "Excel Sheet File(*.xls)|*.xls";
+            fileDialog.Title = "Select A File To Export Information In";
 
             if (fileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -228,40 +227,6 @@ namespace BudgetPlanner.View
             }
         }
 
-        public void ExportDataToTextFile(string fileName)
-        {
-            string textToWrite = string.Empty;
-            string delimeter = ",";
-            DataTable dt = null;
-
-            if (Controller.Constants.Category.Equals("PERSONAL"))
-                dt = Controller.BudgetController.GetPersonalBudget(Controller.Constants.USER_LOGIN_ID);
-            else if (Controller.Constants.Category.Equals("HOME"))
-                dt = Controller.BudgetController.GetHomeBudget(Controller.Constants.USER_LOGIN_ID);
-
-            for (int i = 0; i < dt.Rows.Count; i++)
-            {
-                for (int j = 0; j < dt.Columns.Count; j++)
-                {
-                    if (j == dt.Columns.Count - 1)
-                        continue;
-
-                    textToWrite += dt.Rows[i][j] + delimeter;
-                }
-
-                Controller.Constants.RemoveSuffix(textToWrite, delimeter);
-
-                if (!Controller.Utilities.IsFileExists(fileName))
-                {
-                    Controller.Utilities.WriteTextToFile(textToWrite, fileName);
-                }
-                else
-                {
-                    Controller.Utilities.AppendTextToFile(textToWrite, fileName);
-                }
-
-                textToWrite = string.Empty;
-            }
-        }
+    
     }
 }

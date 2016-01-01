@@ -446,44 +446,6 @@ namespace BudgetPlanner.View
 
         private void cloudDesktopButton4_Click(object sender, EventArgs e)
         {
-            dgvInfo.DataSource = null;
-           
-            DataTable t = null;
-            if (chkAll.Checked)
-            {
-                t = ExpenseDb.getALLExpense("%", Controller.Constants.USER_LOGIN_ID);
-            }
-            else if (chkYear.Checked)
-            {
-               
-                t = ExpenseDb.getExpenseOfYear(dtPicker.Value.ToString("yyyy"), Controller.Constants.USER_LOGIN_ID);
-            }
-            else if (chkMonth.Checked)
-            {
-               
-                t = ExpenseDb.getExpenseOfMonth(dtPicker.Value.ToString("MM"), Controller.Constants.USER_LOGIN_ID);
-            }
-            else if (chkDay.Checked)
-            {
-                
-                t = ExpenseDb.getExpense(dtPicker.Value.ToString("yyyy-MM-dd"), Controller.Constants.USER_LOGIN_ID);
-
-            }
-            else
-            {
-                t = ExpenseDb.getExpense(dtPicker.Value.ToString("yyyy-MM-dd"), Controller.Constants.USER_LOGIN_ID);
-
-            }
-            if(t==null)
-            {
-                MessageBox.Show("No Record Found");
-            }
-            else
-            dgvInfo.DataSource = t;
-            }
-
-        private void cloudDesktopButton3_Click(object sender, EventArgs e)
-        {
 
             dgvInfo.DataSource = null;
 
@@ -511,6 +473,44 @@ namespace BudgetPlanner.View
             else
             {
                 t = EarningDb.getEarning(dtPicker.Value.ToString("yyyy-MM-dd"), Controller.Constants.USER_LOGIN_ID);
+
+            }
+            if (t == null)
+            {
+                MessageBox.Show("No Record Found");
+            }
+            else
+                dgvInfo.DataSource = t;
+            }
+
+        private void cloudDesktopButton3_Click(object sender, EventArgs e)
+        {
+            dgvInfo.DataSource = null;
+
+            DataTable t = null;
+            if (chkAll.Checked)
+            {
+                t = ExpenseDb.getALLExpense("%", Controller.Constants.USER_LOGIN_ID);
+            }
+            else if (chkYear.Checked)
+            {
+
+                t = ExpenseDb.getExpenseOfYear(dtPicker.Value.ToString("yyyy"), Controller.Constants.USER_LOGIN_ID);
+            }
+            else if (chkMonth.Checked)
+            {
+
+                t = ExpenseDb.getExpenseOfMonth(dtPicker.Value.ToString("MM"), Controller.Constants.USER_LOGIN_ID);
+            }
+            else if (chkDay.Checked)
+            {
+
+                t = ExpenseDb.getExpense(dtPicker.Value.ToString("yyyy-MM-dd"), Controller.Constants.USER_LOGIN_ID);
+
+            }
+            else
+            {
+                t = ExpenseDb.getExpense(dtPicker.Value.ToString("yyyy-MM-dd"), Controller.Constants.USER_LOGIN_ID);
 
             }
             if (t == null)

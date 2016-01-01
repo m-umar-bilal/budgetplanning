@@ -64,7 +64,7 @@ namespace BudgetPlanner.View
             try
             {
                 grpCategory.Visible = false;
-                grpData.IsOpen = false;
+                //grpData.IsOpen = false;
                 SettingToolTips();
 
                 if (Controller.Constants.IS_ADMIN)

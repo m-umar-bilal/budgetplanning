@@ -159,7 +159,7 @@ namespace BudgetPlanner.Model
         public static DataTable getEarning(String date, String UID)
         {
 
-            String query2 = "Select Price,CONVERT(date,GETDATE()) from earning where UID = '" + UID + "' and CONVERT(date,GETDATE()) = '" + date + "'";
+            String query2 = "Select Price,CONVERT(date,GETDATE()) from earning where UID = '" + UID + "' and earning.date = '" + date + "'";
 
           
             SqlCommand cmd2 = new SqlCommand(query2, cnn);
@@ -172,7 +172,8 @@ namespace BudgetPlanner.Model
 
                 DataTable table = new DataTable();
                 table.Columns.Add("Price", typeof(int));
-                table.Columns.Add("Date", typeof(String));
+              //  table.Columns.Add("Price", typeof(int));
+             //   table.Columns.Add("a", typeof(int));
 
 
 
@@ -182,7 +183,7 @@ namespace BudgetPlanner.Model
                 {
                     while (ds.Read())
                     {
-                       table.Rows.Add(ds.GetInt32(0), ds.GetString(1));
+                       table.Rows.Add(ds.GetInt32(0));
 
 
 
@@ -220,7 +221,7 @@ namespace BudgetPlanner.Model
 
                 DataTable table = new DataTable();
                 table.Columns.Add("Price", typeof(int));
-                table.Columns.Add("Date", typeof(String));
+                //table.Columns.Add("Date", typeof(String));
 
 
 
@@ -230,7 +231,7 @@ namespace BudgetPlanner.Model
                 {
                     while (ds.Read())
                     {
-                        table.Rows.Add(ds.GetInt32(0), ds.GetString(1));
+                        table.Rows.Add(ds.GetInt32(0));
 
 
 
@@ -269,7 +270,7 @@ namespace BudgetPlanner.Model
 
                 DataTable table = new DataTable();
                 table.Columns.Add("Price", typeof(int));
-                table.Columns.Add("Date", typeof(String));
+              //  table.Columns.Add("Date", typeof(String));
                 
 
 
@@ -279,7 +280,7 @@ namespace BudgetPlanner.Model
                 {
                     while (ds.Read())
                     {
-                        table.Rows.Add(ds.GetInt32(0), ds.GetString(1));
+                        table.Rows.Add(ds.GetInt32(0));
 
 
                     }
@@ -316,7 +317,7 @@ namespace BudgetPlanner.Model
 
                 DataTable table = new DataTable();
                 table.Columns.Add("Price", typeof(int));
-                table.Columns.Add("Date", typeof(String));
+             //   table.Columns.Add("Date", typeof(String));
 
 
 
@@ -326,7 +327,7 @@ namespace BudgetPlanner.Model
                 {
                     while (ds.Read())
                     {
-                        table.Rows.Add(ds.GetInt32(0), ds.GetString(1));
+                        table.Rows.Add(ds.GetInt32(0));
 
 
 

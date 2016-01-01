@@ -136,7 +136,7 @@ namespace BudgetPlanner.Model
         {
           
            
-            String query2 = "Select Price,Location,category.CName from expenses,category where UID= '" + UID+ "' and CONVERT(date,GETDATE()) =  '" + date+ "' and category.cid = expenses.cid";
+            String query2 = "Select Price,Location,category.CName from expenses,category where UID= '" + UID+ "' and expenses.date=  '" + date+ "' and category.cid = expenses.cid";
             SqlCommand cmd2 = new SqlCommand(query2, cnn);
             cnn.Open();
             SqlDataReader ds = cmd2.ExecuteReader();

@@ -420,10 +420,8 @@
             // 
             this.panel1.BackgroundImage = global::BudgetPlanner.Properties.Resources.images;
             this.panel1.Controls.Add(this.btnDone);
-            this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Controls.Add(this.btnClear);
             this.panel1.Controls.Add(this.btnSave);
-            this.panel1.Controls.Add(this.btnEdit);
             this.panel1.Location = new System.Drawing.Point(355, 131);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(363, 58);
@@ -444,7 +442,7 @@
             this.btnDone.FillColor = System.Drawing.Color.Azure;
             this.btnDone.ForeColor = System.Drawing.Color.White;
             this.btnDone.Icon = global::BudgetPlanner.Properties.Resources.semi_success_icon;
-            this.btnDone.Location = new System.Drawing.Point(289, 3);
+            this.btnDone.Location = new System.Drawing.Point(265, 0);
             this.btnDone.Name = "btnDone";
             this.btnDone.Size = new System.Drawing.Size(64, 55);
             this.btnDone.TabIndex = 63;
@@ -465,7 +463,7 @@
             this.btnDelete.FillColor = System.Drawing.Color.Azure;
             this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.Icon = global::BudgetPlanner.Properties.Resources.Actions_user_group_delete_icon;
-            this.btnDelete.Location = new System.Drawing.Point(215, 3);
+            this.btnDelete.Location = new System.Drawing.Point(389, 253);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(64, 55);
             this.btnDelete.TabIndex = 62;
@@ -486,7 +484,7 @@
             this.btnClear.FillColor = System.Drawing.Color.Azure;
             this.btnClear.ForeColor = System.Drawing.Color.White;
             this.btnClear.Icon = global::BudgetPlanner.Properties.Resources.Recycle_Empty_icon;
-            this.btnClear.Location = new System.Drawing.Point(143, 3);
+            this.btnClear.Location = new System.Drawing.Point(189, 0);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(64, 55);
             this.btnClear.TabIndex = 61;
@@ -507,7 +505,7 @@
             this.btnSave.FillColor = System.Drawing.Color.Azure;
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Icon = global::BudgetPlanner.Properties.Resources.Floppy_Small_icon;
-            this.btnSave.Location = new System.Drawing.Point(72, 3);
+            this.btnSave.Location = new System.Drawing.Point(119, 3);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(64, 55);
             this.btnSave.TabIndex = 60;
@@ -528,7 +526,7 @@
             this.btnEdit.FillColor = System.Drawing.Color.Azure;
             this.btnEdit.ForeColor = System.Drawing.Color.White;
             this.btnEdit.Icon = global::BudgetPlanner.Properties.Resources.Actions_document_edit_icon;
-            this.btnEdit.Location = new System.Drawing.Point(3, 2);
+            this.btnEdit.Location = new System.Drawing.Point(299, 253);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(64, 55);
             this.btnEdit.TabIndex = 59;
@@ -542,9 +540,11 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(730, 437);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.lblSearchByName);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.lblUname);
+            this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.lstNames);
             this.Controls.Add(this.dgvUsers);
             this.Controls.Add(this.grpPersonalDetails);

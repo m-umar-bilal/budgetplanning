@@ -46,10 +46,15 @@
             this.btnCalc = new CloudToolkitN6.CloudDesktopButton();
             this.btnSave = new CloudToolkitN6.CloudDesktopButton();
             this.btnCancel = new CloudToolkitN6.CloudDesktopButton();
+            this.budgiDeskDBDataSet1 = new BudgetPlanner.BudgiDeskDBDataSet1();
+            this.categoryBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.categoryTableAdapter1 = new BudgetPlanner.BudgiDeskDBDataSet1TableAdapters.CategoryTableAdapter();
             this.panel2.SuspendLayout();
             this.grpExpenses.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.budgiDeskDBDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.budgiDeskDBDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -124,7 +129,7 @@
             // 
             // boxCat
             // 
-            this.boxCat.DataSource = this.categoryBindingSource;
+            this.boxCat.DataSource = this.categoryBindingSource1;
             this.boxCat.DisplayMember = "CName";
             this.boxCat.FormattingEnabled = true;
             this.boxCat.Location = new System.Drawing.Point(75, 38);
@@ -269,6 +274,20 @@
             this.btnCancel.TabIndex = 71;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click_1);
             // 
+            // budgiDeskDBDataSet1
+            // 
+            this.budgiDeskDBDataSet1.DataSetName = "BudgiDeskDBDataSet1";
+            this.budgiDeskDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // categoryBindingSource1
+            // 
+            this.categoryBindingSource1.DataMember = "Category";
+            this.categoryBindingSource1.DataSource = this.budgiDeskDBDataSet1;
+            // 
+            // categoryTableAdapter1
+            // 
+            this.categoryTableAdapter1.ClearBeforeFill = true;
+            // 
             // frmAddExpenses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -295,6 +314,8 @@
             this.grpExpenses.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.budgiDeskDBDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.budgiDeskDBDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -317,5 +338,8 @@
         private CloudToolkitN6.CloudDesktopButton btnCancel;
         private CloudToolkitN6.CloudDesktopButton btnSave;
         private CloudToolkitN6.CloudDesktopButton btnCalc;
+        private BudgiDeskDBDataSet1 budgiDeskDBDataSet1;
+        private System.Windows.Forms.BindingSource categoryBindingSource1;
+        private BudgiDeskDBDataSet1TableAdapters.CategoryTableAdapter categoryTableAdapter1;
     }
 }

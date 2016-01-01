@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmExportData));
             this.btnBrowseFiles = new CloudToolkitN6.CloudDesktopButton();
-            this.rdbCSVFormat = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.rdbExcelFile = new System.Windows.Forms.RadioButton();
             this.txtPath = new System.Windows.Forms.TextBox();
@@ -69,19 +68,6 @@
             this.btnBrowseFiles.TabIndex = 52;
             this.btnBrowseFiles.Click += new System.EventHandler(this.btnBrowseFiles_Click);
             // 
-            // rdbCSVFormat
-            // 
-            this.rdbCSVFormat.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.rdbCSVFormat.AutoSize = true;
-            this.rdbCSVFormat.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbCSVFormat.Location = new System.Drawing.Point(14, 22);
-            this.rdbCSVFormat.Name = "rdbCSVFormat";
-            this.rdbCSVFormat.Size = new System.Drawing.Size(175, 19);
-            this.rdbCSVFormat.TabIndex = 12;
-            this.rdbCSVFormat.TabStop = true;
-            this.rdbCSVFormat.Text = "&.CSV Comma Separated File";
-            this.rdbCSVFormat.UseVisualStyleBackColor = true;
-            // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -100,7 +86,7 @@
             this.rdbExcelFile.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rdbExcelFile.AutoSize = true;
             this.rdbExcelFile.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbExcelFile.Location = new System.Drawing.Point(14, 46);
+            this.rdbExcelFile.Location = new System.Drawing.Point(6, 22);
             this.rdbExcelFile.Name = "rdbExcelFile";
             this.rdbExcelFile.Size = new System.Drawing.Size(102, 19);
             this.rdbExcelFile.TabIndex = 13;
@@ -122,7 +108,6 @@
             // 
             this.grpExportFormats.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.grpExportFormats.Controls.Add(this.rdbExcelFile);
-            this.grpExportFormats.Controls.Add(this.rdbCSVFormat);
             this.grpExportFormats.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpExportFormats.Location = new System.Drawing.Point(271, 58);
             this.grpExportFormats.Name = "grpExportFormats";
@@ -312,7 +297,6 @@
         #endregion
 
         private CloudToolkitN6.CloudDesktopButton btnBrowseFiles;
-        private System.Windows.Forms.RadioButton rdbCSVFormat;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RadioButton rdbExcelFile;
         private System.Windows.Forms.TextBox txtPath;

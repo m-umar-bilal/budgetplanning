@@ -45,7 +45,7 @@ namespace BudgetPlanner.View
 
                        
                             MessageBox.Show("Previous Amount Was : " + totalHomeAmount);
-                            tempAmount = (totalHomeAmount - homeAmount);
+                            tempAmount = (totalHomeAmount + homeAmount);
                             MessageBox.Show("New Amount Is : " + tempAmount);
                         
 

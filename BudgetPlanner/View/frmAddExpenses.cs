@@ -26,8 +26,10 @@ namespace BudgetPlanner.View
         }
         private void frmAddExpenses_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'budgiDeskDBDataSet1.Category' table. You can move, or remove it, as needed.
+            this.categoryTableAdapter1.Fill(this.budgiDeskDBDataSet1.Category);
             // TODO: This line of code loads data into the 'budgiDeskDBDataSet.Category' table. You can move, or remove it, as needed.
-            this.categoryTableAdapter.Fill(this.budgiDeskDBDataSet.Category);
+           // this.categoryTableAdapter.Fill(this.budgiDeskDBDataSet.Category);
 
         }
 
